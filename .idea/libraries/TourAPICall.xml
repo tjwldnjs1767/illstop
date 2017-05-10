@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TourAPICall">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/lib/TourAPICall.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
