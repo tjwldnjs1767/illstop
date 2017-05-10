@@ -10,7 +10,6 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Vibrator;
-import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -63,6 +62,8 @@ public class MainActivity extends FragmentActivity
     private boolean connectFirst = true;
 
     private double latitude, longitude;
+
+    private boolean locationChangeFirst = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -189,6 +190,9 @@ public class MainActivity extends FragmentActivity
             festivalItems = tourAPIThread.getNearFestivals();
 
             tourAPIThread = null;
+
+            latitude = location.getLatitude();
+            longitude = location.getLongitude();
         }
 
         String markerTitle = "현재 위치";
@@ -197,8 +201,11 @@ public class MainActivity extends FragmentActivity
 
         setCurrentLocation(location, markerTitle, markerSnippet);
 
-        latitude = location.getLatitude();
-        longitude = location.getLongitude();
+        if (locationChangeFirst) {
+            latitude = location.getLatitude();
+            longitude = location.getLongitude();
+            locationChangeFirst = false;
+        }
     }
 
 
