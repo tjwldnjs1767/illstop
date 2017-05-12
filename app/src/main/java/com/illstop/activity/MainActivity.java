@@ -54,7 +54,6 @@ public class MainActivity extends FragmentActivity
 
     TourAPIThread tourAPIThread;
     ArrayList<Festival> festivalItems;
-    ArrayList<String> distanceToFestival;
 
     private GoogleApiClient googleApiClient = null;
     private GoogleMap googleMap = null;
@@ -391,21 +390,17 @@ public class MainActivity extends FragmentActivity
         } catch (IOException ioException) {
             //네트워크 문제
             Toast.makeText(this, "지오코더 서비스 사용불가", Toast.LENGTH_LONG).show();
-            Log.d("★", "지오코더 서비스 사용불가");
         } catch (IllegalArgumentException illegalArgumentException) {
             Toast.makeText(this, "잘못된 GPS 좌표", Toast.LENGTH_LONG).show();
-            Log.d("★",  "잘못된 GPS 좌표");
 
         }
 
 
         if (addresses == null || addresses.size() == 0) {
             Toast.makeText(this, "주소 미발견", Toast.LENGTH_LONG).show();
-            Log.d("★",  "주소 미발견");
 
         } else {
             Address address = addresses.get(0);
-            Log.d("★",  address.getAddressLine(0).toString());
             LocationDataStore locationDataStore = new LocationDataStore();
             locationDataStore.setDbManager(dbManager);
             locationDataStore.setLocationName(addresses.get(0).getAdminArea());
