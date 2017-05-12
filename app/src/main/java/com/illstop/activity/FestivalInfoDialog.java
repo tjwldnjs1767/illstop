@@ -28,24 +28,23 @@ import Definition.Festival;
 
 
 public class FestivalInfoDialog extends DialogFragment {
-    View festivalImg;
-    Bitmap bitmap;
-    Thread t;
+    private View festivalImg = null;
+    private Bitmap bitmap = null;
 
-    TextView telBtn, addrTv, periodTv, remainingDistanceTv, titleTv;
-    Button finishBtn;
+    private TextView telBtn = null, addrTv = null, periodTv = null, remainingDistanceTv = null, titleTv = null;
+    private Button finishBtn = null;
 
-    String remainingDistance = "100m";
-    ArrayList<Festival> festivalItems;
+    private String remainingDistance = "100m";
+    private ArrayList<Festival> festivalItems = null;
 
-    int markerIndex;
+    private int markerIndex = -1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.view_festival_info, container, false);
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
-        initView(v);
 
+        initView(v);
         initMarkerIndex();
 
         setContentToView();
@@ -74,10 +73,10 @@ public class FestivalInfoDialog extends DialogFragment {
 
     private void initMarkerIndex() {
 
-        festivalItems = ((MainActivity) getActivity()).festivalItems;
+        festivalItems = ((MainActivity) getActivity()).getFestivalItems();
 
         for (int i = 0; i < festivalItems.size(); i++) {
-            if (((MainActivity) getActivity()).contentId == festivalItems.get(i).getContentid()) {
+            if (((MainActivity) getActivity()).getContentId() == festivalItems.get(i).getContentid()) {
                 markerIndex = i;
                 break;
             }

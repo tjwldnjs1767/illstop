@@ -50,36 +50,34 @@ public class MainActivity extends FragmentActivity
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
 
-    LatLng festivalPositionLatLng;
+    private LatLng festivalPositionLatLng = null;
 
-    TourAPIThread tourAPIThread;
-    ArrayList<Festival> festivalItems;
+    private TourAPIThread tourAPIThread = null;
+    private ArrayList<Festival> festivalItems = null;
 
     private GoogleApiClient googleApiClient = null;
     private GoogleMap googleMap = null;
-    Marker currentMarker, festivalPositionMarker;
 
-    private static final LatLng DEFAULT_LOCATION = new LatLng(37.56, 126.97);
+
     private static final int UPDATE_INTERVAL_MS = 5000;
     private static final int FASTEST_UPDATE_INTERVAL_MS = 5000;
     private static final int UPDATE_SMALLEST_DISPLACEMENT = 2000;
-
-    public int contentId = 0;
+    private static final LatLng DEFAULT_LOCATION = new LatLng(37.56, 126.97);
+    private final DBManager dbManager = new DBManager(this);
 
     private boolean connectFirst = true;
-
-    private double latitude, longitude;
-
     private boolean locationChangeFirst = true;
+    private int contentId = 0;
+    private double latitude = 0.0, longitude = 0.0;
 
-    final DBManager dbManager = new DBManager(this);
+    Marker currentMarker = null, festivalPositionMarker = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
 
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
-                    WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
+                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_maps);
 
 
@@ -172,7 +170,7 @@ public class MainActivity extends FragmentActivity
             this.latitude = location.getLatitude();
             this.longitude = location.getLongitude();
 
-            getCurrentAddress();
+            handlingGeocoder();
 
             tourAPIThread = new TourAPIThread();
             tourAPIThread.start();
@@ -195,7 +193,7 @@ public class MainActivity extends FragmentActivity
         }
 
         if (arr[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
-            handlingGeocodier(getApplicationContext());
+            handlingGeocoder();
             tourAPIThread = new TourAPIThread();
             tourAPIThread.start();
 
@@ -361,12 +359,19 @@ public class MainActivity extends FragmentActivity
                         return;
                     }
                 } else {
-                    setCurrentLocation(null, "위치정보 가져올 수 없음",
-                            "GPS 활성 여부를 확인하세요");
+                    setCurrentLocation(null, "위치정보 가져올 수 없음", "GPS 활성 여부를 확인하세요");
                 }
 
                 break;
         }
+    }
+
+    public int getContentId() {
+        return contentId;
+    }
+
+    public ArrayList<Festival> getFestivalItems() {
+        return festivalItems;
     }
 
     public void showFestivalInfoDialog() {
@@ -374,9 +379,8 @@ public class MainActivity extends FragmentActivity
         dialog.show(getFragmentManager(), "fragment_dialog_test");
     }
 
-    public void getCurrentAddress(){
+    public void handlingGeocoder() {
 
-        //지오코더... GPS를 주소로 변환
         Geocoder geocoder = new Geocoder(this);
 
         List<Address> addresses = null;
@@ -388,7 +392,6 @@ public class MainActivity extends FragmentActivity
                     this.longitude,
                     1);
         } catch (IOException ioException) {
-            //네트워크 문제
             Toast.makeText(this, "지오코더 서비스 사용불가", Toast.LENGTH_LONG).show();
         } catch (IllegalArgumentException illegalArgumentException) {
             Toast.makeText(this, "잘못된 GPS 좌표", Toast.LENGTH_LONG).show();
@@ -400,7 +403,6 @@ public class MainActivity extends FragmentActivity
             Toast.makeText(this, "주소 미발견", Toast.LENGTH_LONG).show();
 
         } else {
-            Address address = addresses.get(0);
             LocationDataStore locationDataStore = new LocationDataStore();
             locationDataStore.setDbManager(dbManager);
             locationDataStore.setLocationName(addresses.get(0).getAdminArea());
@@ -409,21 +411,6 @@ public class MainActivity extends FragmentActivity
 
     }
 
-    public void handlingGeocodier(Context context) {
-        Geocoder geocoder = new Geocoder(context, Locale.KOREA);
-        List<Address> city;
-        try {
-            city = geocoder.getFromLocation(this.latitude, this.longitude, 1);
-        } catch (IOException e) {
-            Log.e("워도,경도->시,군 변환 io에러: ", e.getMessage());
-            return;
-        }
-
-        Toast.makeText(getApplicationContext(), city.get(0).getAdminArea(), Toast.LENGTH_SHORT).show();
-        LocationDataStore locationDataStore = new LocationDataStore();
-        locationDataStore.setLocationName(city.get(0).getAdminArea());
-        locationDataStore.setLocality(city.get(0).getLocality());
-    }
 
     public class FestivalMarkersMaker implements Runnable {
         @Override
