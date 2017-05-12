@@ -1,4 +1,4 @@
-package com.illstop;
+package com.illstop.activity;
 
 import android.annotation.SuppressLint;
 import android.app.DialogFragment;
@@ -15,6 +15,8 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.illstop.R;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;

@@ -1,9 +1,13 @@
-package com.illstop;
+package com.illstop.data;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.illstop.R;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -22,17 +26,21 @@ public class DBManager extends SQLiteOpenHelper {
 
     private BufferedReader buffer;
 
+    private SQLiteDatabase db;
+
+    private Context context;
     public DBManager(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
-        InputStream inputStream = context.getResources().openRawResource(R.raw.areaCodes);
-        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-        buffer = new BufferedReader(inputStreamReader);
+        this.context = context;
     }
 
     // Called once when executed
     @Override
     public void onCreate(SQLiteDatabase db) {
         /* Create table for save area code data */
+        InputStream inputStream = context.getResources().openRawResource(R.raw.area_codes);
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        buffer = new BufferedReader(inputStreamReader);
         String CREATE_TABLE_SQL = "CREATE TABLE " + AREA_CODE_TABLE_NAME + "(areaCode INTEGER, sigunguCode INTEGER, areaName TEXT, sigunguName TEXT);";
         db.execSQL(CREATE_TABLE_SQL);
 
@@ -43,8 +51,9 @@ public class DBManager extends SQLiteOpenHelper {
         db.beginTransaction();
 
         try {
+            StringBuilder sb = null;
             while ((line = buffer.readLine()) != null) {
-                StringBuilder sb = new StringBuilder(INSERT_DATA_SQL);
+                sb = new StringBuilder(INSERT_DATA_SQL);
                 String[] str = line.split(",");
 
                 sb.append(str[0] + ",");
@@ -54,12 +63,16 @@ public class DBManager extends SQLiteOpenHelper {
 
                 db.execSQL(sb.toString());
             }
+
+            Log.d("■", sb.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         db.setTransactionSuccessful();
         db.endTransaction();
+
+        this.db = db;
     }
 
     @Override
@@ -67,13 +80,16 @@ public class DBManager extends SQLiteOpenHelper {
         String sql = "DROP TABLE IF EXISTS areacode";
         db.execSQL(sql);
         onCreate(db);
+
+        this.db = db;
     }
 
-    public String[] getCode(SQLiteDatabase db, String area, String sigungu) {
+    public String[] getCode(String area, String sigungu) {
         String GET_CODE_SQL = "SELECT areaCode, sigunguCode FROM " + AREA_CODE_TABLE_NAME + " WHERE "
-                + "areaName = " + area + " AND "
-                + "sigunguName = " + sigungu + ";";
+                + "areaName = '" + area + "' AND "
+                + "sigunguName = '" + sigungu + "';";
 
+        db = getReadableDatabase();
         Cursor c = db.rawQuery(GET_CODE_SQL, null);
         c.moveToNext();
 

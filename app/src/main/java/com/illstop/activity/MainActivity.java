@@ -1,4 +1,4 @@
-package com.illstop;
+package com.illstop.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -7,9 +7,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
-import android.os.Vibrator;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -30,11 +31,17 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.illstop.R;
+import com.illstop.data.DBManager;
+import com.illstop.tourAPICall.LocationDataStore;
+import com.illstop.tourAPICall.TourAPIThread;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 import Definition.Festival;
-import TourAPICall.TourAPIThread;
 
 
 public class MainActivity extends FragmentActivity
@@ -58,7 +65,7 @@ public class MainActivity extends FragmentActivity
     private static final int FASTEST_UPDATE_INTERVAL_MS = 5000;
     private static final int UPDATE_SMALLEST_DISPLACEMENT = 2000;
 
-    int contentId = 0;
+    public int contentId = 0;
 
     private boolean connectFirst = true;
 
@@ -66,14 +73,14 @@ public class MainActivity extends FragmentActivity
 
     private boolean locationChangeFirst = true;
 
-    public DBManager dbManager;
+    final DBManager dbManager = new DBManager(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+            super.onCreate(savedInstanceState);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
-                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
+                    WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_maps);
 
 
@@ -152,23 +159,6 @@ public class MainActivity extends FragmentActivity
         googleMap.setMyLocationEnabled(true);
 
         googleMap.getUiSettings().setZoomGesturesEnabled(true);
-
-        tourAPIThread = new TourAPIThread();
-        tourAPIThread.start();
-
-        try {
-            tourAPIThread.join();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        festivalItems = tourAPIThread.getNearFestivals();
-
-        tourAPIThread = null;
-
-        FestivalMarkersMaker festivalMarkersMaker = new FestivalMarkersMaker();
-        Thread t = new Thread(festivalMarkersMaker);
-        t.start();
     }
 
 
@@ -178,10 +168,13 @@ public class MainActivity extends FragmentActivity
         float[] arr = new float[5];
         Location.distanceBetween(latitude, longitude, location.getLatitude(), location.getLongitude(), arr);
 
-//        Toast.makeText(getApplicationContext(), String.valueOf(arr[0]) + " " + String.valueOf(arr[1]) + " " + String.valueOf(arr[2]), Toast.LENGTH_SHORT).show();
+        if (locationChangeFirst) {
 
-        if (arr[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
-            // TODO: 2017-05-10 2km 넘었을 때 정태균 api 호출
+            this.latitude = location.getLatitude();
+            this.longitude = location.getLongitude();
+
+            getCurrentAddress();
+
             tourAPIThread = new TourAPIThread();
             tourAPIThread.start();
 
@@ -190,6 +183,32 @@ public class MainActivity extends FragmentActivity
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
+            festivalItems = tourAPIThread.getNearFestivals();
+
+            tourAPIThread = null;
+
+            FestivalMarkersMaker festivalMarkersMaker = new FestivalMarkersMaker();
+            Thread t = new Thread(festivalMarkersMaker);
+            t.start();
+
+            locationChangeFirst = false;
+        }
+
+        if (arr[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
+            handlingGeocodier(getApplicationContext());
+            tourAPIThread = new TourAPIThread();
+            tourAPIThread.start();
+
+            try {
+                tourAPIThread.join();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            FestivalMarkersMaker festivalMarkersMaker = new FestivalMarkersMaker();
+            Thread t = new Thread(festivalMarkersMaker);
+            t.start();
 
             festivalItems = tourAPIThread.getNearFestivals();
 
@@ -204,12 +223,6 @@ public class MainActivity extends FragmentActivity
                 + " 경도:" + String.valueOf(location.getLongitude());
 
         setCurrentLocation(location, markerTitle, markerSnippet);
-
-        if (locationChangeFirst) {
-            latitude = location.getLatitude();
-            longitude = location.getLongitude();
-            locationChangeFirst = false;
-        }
     }
 
 
@@ -319,7 +332,7 @@ public class MainActivity extends FragmentActivity
             markerOptions.position(DEFAULT_LOCATION)
                     .title(markerTitle)
                     .snippet(markerSnippet)
-                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
             currentMarker = googleMap.addMarker(markerOptions);
 
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_LOCATION, 20));
@@ -362,9 +375,59 @@ public class MainActivity extends FragmentActivity
         dialog.show(getFragmentManager(), "fragment_dialog_test");
     }
 
-    public void notiNewFestival() {
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(3000);
+    public void getCurrentAddress(){
+
+        //지오코더... GPS를 주소로 변환
+        Geocoder geocoder = new Geocoder(this);
+
+        List<Address> addresses = null;
+
+        try {
+
+            addresses = geocoder.getFromLocation(
+                    this.latitude,
+                    this.longitude,
+                    1);
+        } catch (IOException ioException) {
+            //네트워크 문제
+            Toast.makeText(this, "지오코더 서비스 사용불가", Toast.LENGTH_LONG).show();
+            Log.d("★", "지오코더 서비스 사용불가");
+        } catch (IllegalArgumentException illegalArgumentException) {
+            Toast.makeText(this, "잘못된 GPS 좌표", Toast.LENGTH_LONG).show();
+            Log.d("★",  "잘못된 GPS 좌표");
+
+        }
+
+
+        if (addresses == null || addresses.size() == 0) {
+            Toast.makeText(this, "주소 미발견", Toast.LENGTH_LONG).show();
+            Log.d("★",  "주소 미발견");
+
+        } else {
+            Address address = addresses.get(0);
+            Log.d("★",  address.getAddressLine(0).toString());
+            LocationDataStore locationDataStore = new LocationDataStore();
+            locationDataStore.setDbManager(dbManager);
+            locationDataStore.setLocationName(addresses.get(0).getAdminArea());
+            locationDataStore.setLocality(addresses.get(0).getLocality());
+        }
+
+    }
+
+    public void handlingGeocodier(Context context) {
+        Geocoder geocoder = new Geocoder(context, Locale.KOREA);
+        List<Address> city;
+        try {
+            city = geocoder.getFromLocation(this.latitude, this.longitude, 1);
+        } catch (IOException e) {
+            Log.e("워도,경도->시,군 변환 io에러: ", e.getMessage());
+            return;
+        }
+
+        Toast.makeText(getApplicationContext(), city.get(0).getAdminArea(), Toast.LENGTH_SHORT).show();
+        LocationDataStore locationDataStore = new LocationDataStore();
+        locationDataStore.setLocationName(city.get(0).getAdminArea());
+        locationDataStore.setLocality(city.get(0).getLocality());
     }
 
     public class FestivalMarkersMaker implements Runnable {
@@ -380,7 +443,6 @@ public class MainActivity extends FragmentActivity
                         // TODO: 2017-05-10 거리 초기화 및 다이얼로그에 찍기
                         Location.distanceBetween(latitude, longitude, festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX(), results);
 
-                        Toast.makeText(getApplicationContext(), String.valueOf(results[0]), Toast.LENGTH_SHORT).show();
                         festivalPositionMarker = googleMap.addMarker(new MarkerOptions()
                                 .position(festivalPositionLatLng)
                                 .snippet(String.valueOf(festivalItems.get(i).getContentid())));
