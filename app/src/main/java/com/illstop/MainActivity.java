@@ -47,6 +47,7 @@ public class MainActivity extends FragmentActivity
 
     TourAPIThread tourAPIThread;
     ArrayList<Festival> festivalItems;
+    ArrayList<String> distanceToFestival;
 
     private GoogleApiClient googleApiClient = null;
     private GoogleMap googleMap = null;
@@ -64,6 +65,8 @@ public class MainActivity extends FragmentActivity
     private double latitude, longitude;
 
     private boolean locationChangeFirst = true;
+
+    public DBManager dbManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -174,7 +177,8 @@ public class MainActivity extends FragmentActivity
 
         float[] arr = new float[5];
         Location.distanceBetween(latitude, longitude, location.getLatitude(), location.getLongitude(), arr);
-        Toast.makeText(getApplicationContext(), String.valueOf(arr[0]), Toast.LENGTH_SHORT).show();
+
+//        Toast.makeText(getApplicationContext(), String.valueOf(arr[0]) + " " + String.valueOf(arr[1]) + " " + String.valueOf(arr[2]), Toast.LENGTH_SHORT).show();
 
         if (arr[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
             // TODO: 2017-05-10 2km 넘었을 때 정태균 api 호출
@@ -369,13 +373,14 @@ public class MainActivity extends FragmentActivity
             runOnUiThread(new Runnable() {
                 @SuppressLint("NewApi")
                 public void run() {
-                    float[] arr = new float[5];
+                    float[] results = new float[3];
                     for (int i = 0; i < festivalItems.size(); i++) {
                         festivalPositionLatLng = new LatLng(festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX());
 
                         // TODO: 2017-05-10 거리 초기화 및 다이얼로그에 찍기
-                        Location.distanceBetween(latitude, longitude, festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX(), arr);
+                        Location.distanceBetween(latitude, longitude, festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX(), results);
 
+                        Toast.makeText(getApplicationContext(), String.valueOf(results[0]), Toast.LENGTH_SHORT).show();
                         festivalPositionMarker = googleMap.addMarker(new MarkerOptions()
                                 .position(festivalPositionLatLng)
                                 .snippet(String.valueOf(festivalItems.get(i).getContentid())));
