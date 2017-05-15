@@ -50,27 +50,24 @@ public class MainActivity extends FragmentActivity
     private LatLng festivalPositionLatLng = null;
 
     private TourAPIThread tourAPIThread = null;
+    private Thread festivalMarkerThread = null;
     private ArrayList<Festival> festivalItems = null;
 
     private GoogleApiClient googleApiClient = null;
     private GoogleMap googleMap = null;
 
-
-    private static final int UPDATE_INTERVAL_MS = 5000;
-    private static final int FASTEST_UPDATE_INTERVAL_MS = 5000;
-    private static final int UPDATE_SMALLEST_DISPLACEMENT = 2000;
+    private static final int UPDATE_INTERVAL_MS = 1000;
+    private static final int FASTEST_UPDATE_INTERVAL_MS = 1000;
+    private static final int UPDATE_FESTIVAL_DISPLACEMENT = 2000;
+    private static final int UPDATE_SMALLEST_DISPLACEMENT = 1;
     private final DBManager dbManager = new DBManager(this);
 
     private static final LatLng DEFAULT_LOCATION = new LatLng(37.56, 126.97);
     private boolean locationChangeFirst = true;
-    private boolean connectFirst = true;
     private int contentId = 0;
     private double latitude = 0.0, longitude = 0.0;
 
-
     Marker festivalPositionMarker = null;
-
-    Thread festivalMarkerThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,7 +142,7 @@ public class MainActivity extends FragmentActivity
 
         googleMap = map;
 
-        setCurrentLocation(null);
+        setCurrentLocation(null, 0.0, 0.0);
 
         googleMap.getUiSettings().setCompassEnabled(true);
 
@@ -154,6 +151,18 @@ public class MainActivity extends FragmentActivity
         }
 
         googleMap.setMyLocationEnabled(true);
+
+        googleMap.setOnMyLocationButtonClickListener(new GoogleMap.OnMyLocationButtonClickListener() {
+            @Override
+            public boolean onMyLocationButtonClick() {
+
+                // TODO: 2017-05-15 현재 위치로 이동 코드 작성
+                LatLng currentLocation = new LatLng(latitude, longitude);
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 20));
+
+                return false;
+            }
+        });
 
         googleMap.getUiSettings().setZoomGesturesEnabled(true);
     }
@@ -165,8 +174,10 @@ public class MainActivity extends FragmentActivity
         float[] results = new float[2];
         Location.distanceBetween(latitude, longitude, location.getLatitude(), location.getLongitude(), results);
 
+        setCurrentLocation(location, latitude, longitude);
+
         if (!locationChangeFirst) {
-            if (results[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
+            if (results[0] >= UPDATE_FESTIVAL_DISPLACEMENT) {
                 tourAPIThread();
 
                 this.latitude = location.getLatitude();
@@ -181,8 +192,9 @@ public class MainActivity extends FragmentActivity
             tourAPIThread();
         }
 
-        setCurrentLocation(location);
+
     }
+
 
     private void tourAPIThread() {
         handlingGeocoder();
@@ -241,7 +253,8 @@ public class MainActivity extends FragmentActivity
         LocationRequest locationRequest = new LocationRequest();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
                 .setInterval(UPDATE_INTERVAL_MS)
-                .setFastestInterval(FASTEST_UPDATE_INTERVAL_MS);
+                .setFastestInterval(FASTEST_UPDATE_INTERVAL_MS)
+                .setSmallestDisplacement(UPDATE_SMALLEST_DISPLACEMENT);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
             LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, this);
@@ -288,21 +301,12 @@ public class MainActivity extends FragmentActivity
     }
 
 
-    public void setCurrentLocation(Location location) {
+    public void setCurrentLocation(Location location, double prevLatitude, double prevLongitude) {
         if (location != null) {
             LatLng currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
 
-
-
-            if (connectFirst) {
-                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 20));
-                connectFirst = false;
-            } else {
-                googleMap.moveCamera(CameraUpdateFactory.newLatLng(currentLocation));
-            }
-
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 20));
             return;
-
         } else {
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_LOCATION, 20));
         }

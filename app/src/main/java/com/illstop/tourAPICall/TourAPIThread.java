@@ -113,6 +113,11 @@ public class TourAPIThread extends Thread {
             festivalDocument.getDocumentElement().normalize();
 
             totalCount = Integer.parseInt(festivalDocument.getElementsByTagName("totalCount").item(0).getTextContent());
+
+            if (totalCount == 0) {
+                break;
+            }
+
             NodeList nodeList = festivalDocument.getElementsByTagName("item");
 
             for (int i = 0; i < nodeList.getLength(); i++) {
