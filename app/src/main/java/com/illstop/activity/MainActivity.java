@@ -3,7 +3,6 @@ package com.illstop.activity;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -27,7 +26,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -39,7 +37,6 @@ import com.illstop.tourAPICall.TourAPIThread;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import Definition.Festival;
 
@@ -62,15 +59,18 @@ public class MainActivity extends FragmentActivity
     private static final int UPDATE_INTERVAL_MS = 5000;
     private static final int FASTEST_UPDATE_INTERVAL_MS = 5000;
     private static final int UPDATE_SMALLEST_DISPLACEMENT = 2000;
-    private static final LatLng DEFAULT_LOCATION = new LatLng(37.56, 126.97);
     private final DBManager dbManager = new DBManager(this);
 
-    private boolean connectFirst = true;
+    private static final LatLng DEFAULT_LOCATION = new LatLng(37.56, 126.97);
     private boolean locationChangeFirst = true;
+    private boolean connectFirst = true;
     private int contentId = 0;
     private double latitude = 0.0, longitude = 0.0;
 
-    Marker currentMarker = null, festivalPositionMarker = null;
+
+    Marker festivalPositionMarker = null;
+
+    Thread festivalMarkerThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,7 +145,7 @@ public class MainActivity extends FragmentActivity
 
         googleMap = map;
 
-        setCurrentLocation(null, "", "");
+        setCurrentLocation(null);
 
         googleMap.getUiSettings().setCompassEnabled(true);
 
@@ -162,66 +162,56 @@ public class MainActivity extends FragmentActivity
     @Override
     public void onLocationChanged(Location location) {
 
-        float[] arr = new float[5];
-        Location.distanceBetween(latitude, longitude, location.getLatitude(), location.getLongitude(), arr);
+        float[] results = new float[2];
+        Location.distanceBetween(latitude, longitude, location.getLatitude(), location.getLongitude(), results);
 
-        if (locationChangeFirst) {
+        if (!locationChangeFirst) {
+            if (results[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
+                tourAPIThread();
+
+                this.latitude = location.getLatitude();
+                this.longitude = location.getLongitude();
+            }
+        } else {
+            locationChangeFirst = false;
 
             this.latitude = location.getLatitude();
             this.longitude = location.getLongitude();
 
-            handlingGeocoder();
-
-            tourAPIThread = new TourAPIThread();
-            tourAPIThread.start();
-
-            try {
-                tourAPIThread.join();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            festivalItems = tourAPIThread.getNearFestivals();
-
-            tourAPIThread = null;
-
-            FestivalMarkersMaker festivalMarkersMaker = new FestivalMarkersMaker();
-            Thread t = new Thread(festivalMarkersMaker);
-            t.start();
-
-            locationChangeFirst = false;
+            tourAPIThread();
         }
 
-        if (arr[0] >= UPDATE_SMALLEST_DISPLACEMENT) {
-            handlingGeocoder();
-            tourAPIThread = new TourAPIThread();
-            tourAPIThread.start();
-
-            try {
-                tourAPIThread.join();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            FestivalMarkersMaker festivalMarkersMaker = new FestivalMarkersMaker();
-            Thread t = new Thread(festivalMarkersMaker);
-            t.start();
-
-            festivalItems = tourAPIThread.getNearFestivals();
-
-            tourAPIThread = null;
-
-            latitude = location.getLatitude();
-            longitude = location.getLongitude();
-        }
-
-        String markerTitle = "현재 위치";
-        String markerSnippet = "위도:" + String.valueOf(location.getLatitude())
-                + " 경도:" + String.valueOf(location.getLongitude());
-
-        setCurrentLocation(location, markerTitle, markerSnippet);
+        setCurrentLocation(location);
     }
 
+    private void tourAPIThread() {
+        handlingGeocoder();
+
+        tourAPIThread = new TourAPIThread();
+        tourAPIThread.start();
+
+        try {
+            tourAPIThread.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        festivalItems = tourAPIThread.getNearFestivals();
+
+        tourAPIThread = null;
+
+        FestivalMarkersMaker festivalMarkersMaker = new FestivalMarkersMaker();
+        festivalMarkerThread = new Thread(festivalMarkersMaker);
+        festivalMarkerThread.start();
+
+        try {
+            festivalMarkerThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        festivalMarkerThread = null;
+    }
 
     protected synchronized void buildGoogleApiClient() {
 
@@ -291,29 +281,18 @@ public class MainActivity extends FragmentActivity
     public void onConnectionSuspended(int cause) {
         if (cause == CAUSE_NETWORK_LOST)
             Log.e("googlemap", "onConnectionSuspended(): Google Play services " +
-                    "connection lost.  Cause: network lost.");
+                    "connection lost Cause: network lost.");
         else if (cause == CAUSE_SERVICE_DISCONNECTED)
             Log.e("googlemap", "onConnectionSuspended():  Google Play services " +
-                    "connection lost.  Cause: service disconnected");
+                    "connection lost Cause: service disconnected");
     }
 
 
-    public void setCurrentLocation(Location location, String markerTitle, String markerSnippet) {
-
-        if (currentMarker != null) currentMarker.remove();
-
-
+    public void setCurrentLocation(Location location) {
         if (location != null) {
             LatLng currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
 
-            MarkerOptions markerOptions = new MarkerOptions();
-            markerOptions.position(currentLocation)
-                    .title(markerTitle)
-                    .snippet(markerSnippet)
-                    .icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
 
-            currentMarker = googleMap.addMarker(markerOptions);
 
             if (connectFirst) {
                 googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 20));
@@ -325,13 +304,6 @@ public class MainActivity extends FragmentActivity
             return;
 
         } else {
-            MarkerOptions markerOptions = new MarkerOptions();
-            markerOptions.position(DEFAULT_LOCATION)
-                    .title(markerTitle)
-                    .snippet(markerSnippet)
-                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-            currentMarker = googleMap.addMarker(markerOptions);
-
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_LOCATION, 20));
         }
     }
@@ -359,7 +331,7 @@ public class MainActivity extends FragmentActivity
                         return;
                     }
                 } else {
-                    setCurrentLocation(null, "위치정보 가져올 수 없음", "GPS 활성 여부를 확인하세요");
+                    Toast.makeText(getApplicationContext(), "GPS 활성 여부를 확인하세요", Toast.LENGTH_SHORT).show();
                 }
 
                 break;
@@ -398,7 +370,6 @@ public class MainActivity extends FragmentActivity
 
         }
 
-
         if (addresses == null || addresses.size() == 0) {
             Toast.makeText(this, "주소 미발견", Toast.LENGTH_LONG).show();
 
@@ -433,11 +404,8 @@ public class MainActivity extends FragmentActivity
                     googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                         @Override
                         public boolean onMarkerClick(Marker marker) {
-
-                            if (!marker.equals(currentMarker)) {
-                                contentId = Integer.parseInt(marker.getSnippet());
-                                showFestivalInfoDialog();
-                            }
+                            contentId = Integer.parseInt(marker.getSnippet());
+                            showFestivalInfoDialog();
                             return true;
                         }
                     });
