@@ -9,10 +9,6 @@ import com.illstop.activity.MainActivity;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created by dsm2015 on 2017-05-22.
- */
-
 public class GeoCoderConverter {
     private MainActivity mainActivity;
     private double latitude, longitude;

@@ -158,53 +158,5 @@ public class TourAPIThread extends Thread {
             }
             pageNo += 1;
         } while (totalCount > numOfRows * (pageNo - 1));
-
-        /* Location based API call
-        // detailIntro 호출, locationBasedList 호출로 얻은 contentId로 축제 시작일과 종료일 받아옴
-        // 종료된 축제일 경우 ArrayList에서 제거
-        for(int i = nearFestivals.size() - 1; i >= 0; i--){
-            // detailIntro 파라미터 설정
-            detailParamMap.put("contentId", Integer.toString(nearFestivals.get(i).getContentid()));
-
-            detailDocument = tourAPIHTTP.getNearFestival(detailParamMap, TourAPIHTTP.DETAILINTRO);
-            detailDocument.getDocumentElement().normalize();
-
-            Element element = (Element) detailDocument.getElementsByTagName("item").item(0);
-
-            // 축제 종료일이 없는 경우 365일 진행하는 축제로 간주
-            if (element.getElementsByTagName("eventenddate").item(0) == null){
-                Element tempElement = detailDocument.createElement("eventenddate");
-                tempElement.setTextContent(tomorrow);   // nearFestivals ArrayList에서 객체를 지우지 않도록 내일 날짜 설정
-                element.appendChild(tempElement);
-            }
-
-            try{ // "yyyyMMdd" 포맷에 맞춰 축제 종료일 확인
-                festivalEndDate = tourAPIDateFormat.parse(element.getElementsByTagName("eventenddate").item(0).getTextContent());
-            } catch (ParseException e){
-                e.printStackTrace();
-            }
-
-            // 축제 종료일이 지난 경우 nearFestivals ArrayList에서 객체 제거
-            if (festivalEndDate.before(today)){
-                nearFestivals.remove(i);
-            }
-            // 축제 진행 중인 경우 nearFestivals ArrayList에서 객체 정보(축제 시작일, 축제 종료일) 갱신
-            else{
-                try{
-                    // 축제 기한이 명시되어 있지 않은 경우 오늘 날짜로 설정
-                    if (element.getElementsByTagName("eventstartdate").item(0) == null){
-                        nearFestivals.get(i).setEventStartDate(today);
-                        nearFestivals.get(i).setEventEndDate(today);
-                    }
-                    else{
-                        nearFestivals.get(i).setEventStartDate(tourAPIDateFormat.parse(element.getElementsByTagName("eventstartdate").item(0).getTextContent()));
-                        nearFestivals.get(i).setEventEndDate(tourAPIDateFormat.parse(element.getElementsByTagName("eventenddate").item(0).getTextContent()));
-                    }
-                } catch (ParseException e){
-                    e.printStackTrace();
-                }
-            }
-        } */
-
     }
 }

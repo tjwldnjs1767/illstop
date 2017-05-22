@@ -16,14 +16,14 @@ import com.illstop.activity.MainActivity;
 import static android.content.Context.LOCATION_SERVICE;
 
 
-public class ConnectionCallbacks implements GoogleApiClient.ConnectionCallbacks {
+public class GoogleApiClientConnectionCallbacks implements GoogleApiClient.ConnectionCallbacks {
 
     private MainActivity mainActivity;
     private static final int UPDATE_INTERVAL_MS = 1000;
     private static final int FASTEST_UPDATE_INTERVAL_MS = 1000;
     private static final int UPDATE_SMALLEST_DISPLACEMENT = 2;
 
-    public ConnectionCallbacks(MainActivity mainActivity) {
+    public GoogleApiClientConnectionCallbacks(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
     }
 

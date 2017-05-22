@@ -14,15 +14,10 @@ import java.util.ArrayList;
 
 import Definition.Festival;
 
-/**
- * Created by dsm2015 on 2017-05-22.
- */
-
 public class FestivalMarkerThread implements Runnable {
     MainActivity mainActivity;
     private LatLng festivalPositionLatLng = null;
     private ArrayList<Festival> festivalItems;
-    private Marker festivalPositionMarker = null;
     private double latitude, longitude;
 
     public FestivalMarkerThread(MainActivity mainActivity, ArrayList<Festival> festivalItems, double latitude, double longitude) {
@@ -48,7 +43,7 @@ public class FestivalMarkerThread implements Runnable {
 
                     Location.distanceBetween(latitude, longitude, festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX(), results);
 
-                    festivalPositionMarker = mainActivity.googleMap.addMarker(new MarkerOptions()
+                    mainActivity.googleMap.addMarker(new MarkerOptions()
                             .position(festivalPositionLatLng)
                             .snippet(String.valueOf(festivalItems.get(i).getContentid())));
                 }

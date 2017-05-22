@@ -5,7 +5,6 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -17,9 +16,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
+
 import com.illstop.R;
 import com.illstop.data.GeoCoderConverter;
-import com.illstop.listener.ConnectionCallbacks;
+import com.illstop.listener.GoogleApiClientConnectionCallbacks;
 import com.illstop.listener.OnConnectionFailedListener;
 import com.illstop.thread.FestivalMarkerThread;
 import com.illstop.tourAPICall.TourAPIThread;
@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private boolean locationChangeFirst = true;
     public int contentId = 0;
     private double latitude = 0.0, longitude = 0.0;
-    private ConnectionCallbacks callbacks;
+    private GoogleApiClientConnectionCallbacks callbacks;
     private OnConnectionFailedListener connectionFailedListener;
 
     @Override
@@ -185,7 +185,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     protected synchronized void buildGoogleApiClient() {
-        callbacks = new ConnectionCallbacks(this);
+        callbacks = new GoogleApiClientConnectionCallbacks(this);
         connectionFailedListener = new OnConnectionFailedListener(this);
 
         googleApiClient = new GoogleApiClient.Builder(this)
