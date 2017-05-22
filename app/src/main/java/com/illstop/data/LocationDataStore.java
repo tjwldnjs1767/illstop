@@ -1,4 +1,4 @@
-package com.illstop.tourAPICall;
+package com.illstop.data;
 
 import com.illstop.data.DBManager;
 

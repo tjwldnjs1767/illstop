@@ -2,6 +2,8 @@ package com.illstop.tourAPICall;
 
 import android.util.Log;
 
+import com.illstop.data.LocationDataStore;
+
 import Definition.Festival;
 import Definition.OperationCode;
 

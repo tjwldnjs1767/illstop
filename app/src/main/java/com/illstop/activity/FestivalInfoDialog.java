@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Paint;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -34,9 +35,7 @@ public class FestivalInfoDialog extends DialogFragment {
     private TextView telBtn = null, addrTv = null, periodTv = null, remainingDistanceTv = null, titleTv = null;
     private Button finishBtn = null;
 
-    private String remainingDistance = "100m";
     private ArrayList<Festival> festivalItems = null;
-
     private int markerIndex = -1;
 
     @Override
@@ -130,8 +129,16 @@ public class FestivalInfoDialog extends DialogFragment {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                float[] results = new float[3];
                 try {
-                    remainingDistanceTv.setText(remainingDistance);
+                    Location.distanceBetween(((MainActivity) getActivity()).getLatitude(), ((MainActivity) getActivity()).getLongitude(),
+                            festivalItems.get(markerIndex).getMapY(), festivalItems.get(markerIndex).getMapX(), results);
+
+                    if (results[0] / 1000.0 == 0)
+                        remainingDistanceTv.setText(String.valueOf(results[0]) + "m");
+                    else {
+                        remainingDistanceTv.setText(String.valueOf((int) results[0] / 1000) + "km " + String.valueOf((int) results[0] % 1000) + "m");
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
