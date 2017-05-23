@@ -24,7 +24,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-
 import Definition.Festival;
 
 
@@ -71,7 +70,6 @@ public class FestivalInfoDialog extends DialogFragment {
     }
 
     private void initMarkerIndex() {
-
         festivalItems = ((MainActivity) getActivity()).getFestivalItems();
 
         for (int i = 0; i < festivalItems.size(); i++) {
@@ -83,7 +81,6 @@ public class FestivalInfoDialog extends DialogFragment {
     }
 
     private void setContentToView() {
-
         titleTv.setText(festivalItems.get(markerIndex).getTitle());
         addrTv.setText(festivalItems.get(markerIndex).getAddr1());
 
@@ -136,9 +133,9 @@ public class FestivalInfoDialog extends DialogFragment {
 
                     if (results[0] / 1000.0 == 0)
                         remainingDistanceTv.setText(String.valueOf(results[0]) + "m");
-                    else {
+                    else
                         remainingDistanceTv.setText(String.valueOf((int) results[0] / 1000) + "km " + String.valueOf((int) results[0] % 1000) + "m");
-                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -149,7 +146,6 @@ public class FestivalInfoDialog extends DialogFragment {
                     e.printStackTrace();
                 } finally {
                     if (bitmap != null) {
-
                         if (getActivity() == null) {
                             return;
                         }
