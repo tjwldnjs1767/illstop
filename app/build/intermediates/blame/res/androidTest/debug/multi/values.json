@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\android\\illstop\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\dsm2015\\.android\\build-cache\\123bf09c99fc41ce7bf37da243a99bb778ac0610\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\jwqe764241\\.android\\build-cache\\d482269d6d745d173a792c444886d0139d68ad55\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

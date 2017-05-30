@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="illstop_Module">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/lib/illstop_Module.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

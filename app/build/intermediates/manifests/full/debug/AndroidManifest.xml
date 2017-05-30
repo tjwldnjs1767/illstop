@@ -60,7 +60,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.illstop.MainActivity"
+            android:name="com.illstop.activity.MainActivity"
             android:label="@string/title_activity_maps" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
