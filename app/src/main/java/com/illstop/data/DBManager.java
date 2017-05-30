@@ -37,7 +37,7 @@ public class DBManager extends SQLiteOpenHelper {
     // Called once when executed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        /* Create table for save area code data */
+        /* Create table for save areㄹa code data */
         InputStream inputStream = context.getResources().openRawResource(R.raw.area_codes);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         buffer = new BufferedReader(inputStreamReader);
@@ -63,8 +63,6 @@ public class DBManager extends SQLiteOpenHelper {
 
                 db.execSQL(sb.toString());
             }
-
-            Log.d("■", sb.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -85,6 +83,7 @@ public class DBManager extends SQLiteOpenHelper {
     }
 
     public String[] getCode(String area, String sigungu) {
+        Log.i("ddd", area + " " + sigungu);
         String GET_CODE_SQL = "SELECT areaCode, sigunguCode FROM " + AREA_CODE_TABLE_NAME + " WHERE "
                 + "areaName = '" + area + "' AND "
                 + "sigunguName = '" + sigungu + "';";

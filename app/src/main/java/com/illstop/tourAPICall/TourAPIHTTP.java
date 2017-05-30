@@ -22,10 +22,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-/**
- * Created by Jeong Taegyun on 2017-04-10.
- */
-
 public class TourAPIHTTP {
     private final static String SERVICEKEY = "mJOEcE4eFDUTJd8nBIasxDwAws4fIdm64UmPnM6qGSJCmLubYafK9MxfKDmp4P0G71WBf8RQC1a09ebXz%2Ffxig%3D%3D";
 
@@ -74,10 +70,6 @@ public class TourAPIHTTP {
 
                 case DETAILINTRO:
                     url = OperationURL.LOCATIONBASEDLISTURL + parameters;
-                    break;
-
-                case AREACODE:
-                    url = OperationURL.AREACODE + parameters;
                     break;
 
                 case UNKNOWN:

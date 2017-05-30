@@ -19,9 +19,11 @@ public class FestivalMarkerThread implements Runnable {
     private LatLng festivalPositionLatLng = null;
     private ArrayList<Festival> festivalItems;
     private double latitude, longitude;
+    private GoogleMap googleMap;
 
-    public FestivalMarkerThread(MainActivity mainActivity, ArrayList<Festival> festivalItems, double latitude, double longitude) {
+    public FestivalMarkerThread(MainActivity mainActivity, GoogleMap googleMap, ArrayList<Festival> festivalItems, double latitude, double longitude) {
         this.mainActivity = mainActivity;
+        this.googleMap = googleMap;
         this.festivalItems = festivalItems;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -37,18 +39,19 @@ public class FestivalMarkerThread implements Runnable {
         mainActivity.runOnUiThread(new Runnable() {
             @SuppressLint("NewApi")
             public void run() {
+                googleMap.clear();
                 float[] results = new float[3];
                 for (int i = 0; i < festivalItems.size(); i++) {
                     festivalPositionLatLng = new LatLng(festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX());
 
                     Location.distanceBetween(latitude, longitude, festivalItems.get(i).getMapY(), festivalItems.get(i).getMapX(), results);
 
-                    mainActivity.googleMap.addMarker(new MarkerOptions()
+                    googleMap.addMarker(new MarkerOptions()
                             .position(festivalPositionLatLng)
                             .snippet(String.valueOf(festivalItems.get(i).getContentid())));
                 }
 
-                mainActivity.googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                     @Override
                     public boolean onMarkerClick(Marker marker) {
                         mainActivity.contentId = Integer.parseInt(marker.getSnippet());

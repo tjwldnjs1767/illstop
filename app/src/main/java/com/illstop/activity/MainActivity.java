@@ -142,11 +142,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         setCurrentLocation(location);
 
         if (!locationChangeFirst) {
-            if (results[0] >= UPDATE_FESTIVAL_DISPLACEMENT) {
-                callTourAPIThread();
-
-                this.latitude = location.getLatitude();
+            if (results[0] >= UPDATE_FESTIVAL_DISPLACEMENT) {this.latitude = location.getLatitude();
                 this.longitude = location.getLongitude();
+                callTourAPIThread();
             }
         } else {
             locationChangeFirst = false;
@@ -173,7 +171,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         festivalItems = tourAPIThread.getNearFestivals();
 
-        FestivalMarkerThread festivalMarkersMakerThread = new FestivalMarkerThread(this, festivalItems, latitude, longitude);
+        FestivalMarkerThread festivalMarkersMakerThread = new FestivalMarkerThread(this, googleMap, festivalItems, latitude, longitude);
         Thread festivalMarkerThread = new Thread(festivalMarkersMakerThread);
         festivalMarkerThread.start();
 
