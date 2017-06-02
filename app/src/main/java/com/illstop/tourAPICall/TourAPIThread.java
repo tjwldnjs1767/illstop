@@ -4,9 +4,6 @@ import android.util.Log;
 
 import com.illstop.data.LocationDataStore;
 
-import Definition.Festival;
-import Definition.OperationCode;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -17,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+
+import Definition.Festival;
+import Definition.OperationCode;
 
 /**
  * Created by Jeong Taegyun on 2017-04-10.

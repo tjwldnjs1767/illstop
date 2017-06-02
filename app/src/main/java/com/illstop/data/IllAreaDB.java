@@ -21,29 +21,28 @@ public class IllAreaDB {
     public static final String DBNAME = "area.db";
     public static final String PACKPATH = "/data/data/com.illstop/databases";
 
-    private Connection  m_Connection = null;
-    private boolean	m_bIsOpened  = false;
+    private Connection m_Connection = null;
+    private boolean m_bIsOpened = false;
 
-    private File		m_file		 = null;
+    private File m_file = null;
 
-    public IllAreaDB(File source) throws IllegalArgumentException{
+    public IllAreaDB(File source) throws IllegalArgumentException {
 
-        if(source == null){
+        if (source == null) {
             throw new IllegalArgumentException("source cannot be null");
         }
 
         m_file = source;
     }
 
-    private boolean open(){
-		/*
+    private boolean open() {
+        /*
 		* 		URL 수정할것
 		* */
-        try{
+        try {
             Class.forName("org.sqldroid.SQLDroidDriver");
             m_Connection = DriverManager.getConnection("jdbc:sqldroid:" + m_file);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
@@ -52,15 +51,17 @@ public class IllAreaDB {
         return true;
     }
 
-    private boolean close(){
+    private boolean close() {
 
-        if(m_bIsOpened == false) { return true; }
+        if (m_bIsOpened == false) {
+            return true;
+        }
 
-        try {
+            try {
             m_Connection.close();
             m_Connection = null;
             m_bIsOpened = false;
-        } catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
@@ -70,20 +71,20 @@ public class IllAreaDB {
 
     //이미 있으면 -> true;
     //없으면 	  -> false;
-    public boolean isValid(){
+    public boolean isValid() {
 
         open();
 
-        try{
+        try {
             DatabaseMetaData mt = m_Connection.getMetaData();
             ResultSet rs = mt.getTables(null, null, "%", null);
             while (rs.next()) {
-                if(rs.getString(3).equals("Area")){
+                if (rs.getString(3).equals("Area")) {
                     close();
                     return true;
                 }
             }
-        } catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
@@ -99,19 +100,19 @@ public class IllAreaDB {
         //Statement statement = null;
         //ResultSet resultSet = null;
 
-        try{
+        try {
 
             Statement statement = m_Connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
 
             ArrayList<String> resultSink = new ArrayList<String>();
 
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 resultSink.add(resultSet.getString(1));
             }
 
             return resultSink;
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
@@ -141,7 +142,7 @@ public class IllAreaDB {
 
         ArrayList<String> resultSink = null;
 
-        if(val2 == null){
+        if (val2 == null) {
             StringBuilder builder = new StringBuilder();
             builder.append("Select AreaNo from Area where ")
                     .append("Area1=").append("\"").append(val1).append("\";");
@@ -149,16 +150,14 @@ public class IllAreaDB {
             System.out.println(builder.toString());
 
             resultSink = executeQuery(builder.toString());
-        }
-        else if(val3 == null){
+        } else if (val3 == null) {
             StringBuilder builder = new StringBuilder();
             builder.append("Select AreaNo from Area where ")
                     .append("Area1=").append("\"").append(val1).append("\" and ")
                     .append("Area2=").append("\"").append(val2).append("\";");
 
             resultSink = executeQuery(builder.toString());
-        }
-        else{
+        } else {
             StringBuilder builder = new StringBuilder();
             builder.append("Select AreaNo from Area where ")
                     .append("Area1=").append("\"").append(val1).append("\" and ")
@@ -196,33 +195,34 @@ public class IllAreaDB {
     }
 
     //--TestMethod
-    public void printCurTable(File dest){
+    public void printCurTable(File dest) {
 
         open();
 
-        try{
+        try {
             DatabaseMetaData mt = m_Connection.getMetaData();
             ResultSet rs = mt.getTables(null, null, "%", null);
             while (rs.next()) {
                 System.out.println(rs.getString(3));
             }
-        } catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         close();
     }
-    public void printCurColumn(File dest){
+
+    public void printCurColumn(File dest) {
 
         open();
 
-        try{
+        try {
             Statement statement = m_Connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM AREA");
             ResultSetMetaData rsmd = rs.getMetaData();
             String name = rsmd.getColumnName(4);
             System.out.println(name);
-        } catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 

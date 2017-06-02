@@ -2,44 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    android:gravity="center"
-    android:padding="20dp">
-
-    <ImageView
-        android:id="@+id/festival_picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/festival_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/festival_picture" />
-
-    <TextView
-        android:id="@+id/festival_addr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/festival_name" />
-
-    <Button
-        android:id="@+id/festival_tel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/festival_addr"
-        android:background="#00ff0000" />
-
-    <TextView
-        android:id="@+id/remaining_distance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/festival_tel" />
-
-=======
-=======
->>>>>>> origin/ui
     android:gravity="center">
 
     <RelativeLayout
@@ -196,8 +158,4 @@
         android:text="확인"
         android:textColor="#ffffff"
         android:textSize="18dp" />
-<<<<<<< HEAD
->>>>>>> origin/ui
-=======
->>>>>>> origin/ui
 </RelativeLayout>

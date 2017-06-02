@@ -1,12 +1,4 @@
 <resources>
-    <string name="app_name">illstop</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <string name="title_activity_maps">Map</string>
-=======
+    <string name="app_name">축제 알리미</string>
     <string name="title_activity_maps">illstop</string>
->>>>>>> origin/ui
-=======
-    <string name="title_activity_maps">illstop</string>
->>>>>>> origin/ui
 </resources>

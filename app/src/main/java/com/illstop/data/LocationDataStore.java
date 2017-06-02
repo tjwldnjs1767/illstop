@@ -1,7 +1,5 @@
 package com.illstop.data;
 
-import com.illstop.data.DBManager;
-
 public class LocationDataStore {
 
     public static DBManager dbManager;

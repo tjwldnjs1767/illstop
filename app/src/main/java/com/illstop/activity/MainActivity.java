@@ -3,13 +3,11 @@ package com.illstop.activity;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.WindowManager;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.IllnessManager.Parse.QUERYTYPE;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
@@ -18,23 +16,16 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
-
 import com.illstop.R;
-import com.illstop.Utils.IllTextUtils;
 import com.illstop.data.GeoCoderConverter;
-import com.illstop.data.IllAreaDB;
 import com.illstop.listener.GoogleApiClientConnectionCallbacks;
 import com.illstop.listener.OnConnectionFailedListener;
-import com.illstop.listener.OnSwipeListener;
 import com.illstop.thread.FestivalMarkerThread;
 import com.illstop.tourAPICall.TourAPIThread;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import Definition.Festival;
-
-import static com.illstop.Utils.IllTextUtils.getResponse;
 
 
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
@@ -51,10 +42,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleApiClientConnectionCallbacks callbacks;
     private OnConnectionFailedListener connectionFailedListener;
 
-    //--IllModule
-    private TextView tv_illInfo = null;
-    //IllModule--
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,70 +49,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_maps);
-
-        IllAreaDB.copyDBFile(this);
-
-        tv_illInfo = (TextView)findViewById(R.id.tv_illInfo);
-
-        File file = new File("/data/data/com.illstop/databases/area.db");
-        IllAreaDB db = new IllAreaDB(file);
-
-        if(db.isValid()) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    ArrayList<String> sink = db.getAreaNo("서울특별시", null, null);
-                    StringBuilder sb = IllTextUtils.makeText(getResponse(QUERYTYPE.TYPE_SKIN, sink.get(0)));
-                    runOnUiThread(new Runnable(){
-                        @Override
-                        public void run() {
-                            IllTextUtils.setText(tv_illInfo, sb);
-                        }
-                    });
-                }
-            }).start();
-        }
-
-        tv_illInfo.setOnTouchListener(new OnSwipeListener(this){
-            @Override
-            public void onSwipeLeft() {
-                super.onSwipeLeft();
-                if(db.isValid()) {
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            ArrayList<String> sink = db.getAreaNo("서울특별시", null, null);
-                            StringBuilder sb = IllTextUtils.makeText(getResponse(QUERYTYPE.TYPE_INFLU, sink.get(0)));
-                            runOnUiThread(new Runnable(){
-                                @Override
-                                public void run() {
-                                    IllTextUtils.setText(tv_illInfo, sb);
-                                }
-                            });
-                        }
-                    }).start();
-                }
-            }
-            @Override
-            public void onSwipeRight() {
-                super.onSwipeRight();
-                if(db.isValid()) {
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            ArrayList<String> sink = db.getAreaNo("서울특별시", null, null);
-                            StringBuilder sb = IllTextUtils.makeText(getResponse(QUERYTYPE.TYPE_SKIN, sink.get(0)));
-                            runOnUiThread(new Runnable(){
-                                @Override
-                                public void run() {
-                                    IllTextUtils.setText(tv_illInfo, sb);
-                                }
-                            });
-                        }
-                    }).start();
-                }
-            }
-        });
 
 
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
@@ -204,7 +127,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
         public boolean onMyLocationButtonClick() {
             LatLng currentLocation = new LatLng(latitude, longitude);
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 20));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 10));
             return false;
         }
     };
@@ -218,7 +141,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         setCurrentLocation(location);
 
         if (!locationChangeFirst) {
-            if (results[0] >= UPDATE_FESTIVAL_DISPLACEMENT) {this.latitude = location.getLatitude();
+            if (results[0] >= UPDATE_FESTIVAL_DISPLACEMENT) {
+                this.latitude = location.getLatitude();
                 this.longitude = location.getLongitude();
                 callTourAPIThread();
             }
