@@ -1,0 +1,4 @@
+#Tue May 30 09:47:48 KST 2017
+base.0=C\:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main\\classes.dex

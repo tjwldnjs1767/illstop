@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\7575277931850c20583436f03e3228f2035f3c4c\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-17d0aab64fca4f081b9108c94427f3100a0d236e.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\56820abe2b6adf311c07bfc5ffc4bd09eeb0d0f3\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-868732cc7d444c181bebd1c38627e73bc2590a95.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\f1f918d5a192066d2d40602430c6107429ca5276\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-1828de6ded9a8e36e084de5713857f62c12046b1.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\09bacac4fa4462d4f422ce7ea76b496030dfba51\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-64bcd1de82e23ac9d2fbe31fc5e920278d00ad62.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\bde74f6835808271a4eb42b2896dcbfa65362164\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-a6722dc6273241e324858944f2780d0b7faee762.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.gradle\caches\modules-2\files-2.1\org.sqldroid\sqldroid\1.0.3\e163bbc80e2c7b99d7f20cffa36fd5b25996975\sqldroid-1.0.3.jar"
+        revision="25.0.2"
+        sha1="0e163bbc80e2c7b99d7f20cffa36fd5b25996975">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\sqldroid-1.0.3-70ce55e37654ef9ab77d66ec3a472850ddb7a33e.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\8ba1e6ac5e7e24aee563261586c99591a4b13951\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-8b06dd4598cce26e24f5d17ea688998399e40298.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\7202bf9df092172a44f89d3357f90f41a76427ce\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-f53ea99270d383e04d893437bb68c64c61df5db6.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\7bb51662d7490fcac56b2e3468ae6ddcaeea5cbd\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-414199b3a94f72b6929d3fb100fe775f4b999247.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\support-annotations-25.3.1-4587515df70b11ae990e217c69c9b3a61733a049.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\6711be88ac14562fbea3ddd2262c1ca7f4ddf4f6\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-52388c80c7d3c22572664847473f1dcf5f6ec0e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\Documents\GitHub\illstop\app\lib\TourAPICall.jar"
+        revision="25.0.2"
+        sha1="4c65c24353d2f1bf53a456ac75abf950a8a93a81">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\TourAPICall-95c87ca0d78d008ec377909ad6341dd1298c57fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\cd4b075914d454d5191f55ff6f6ae2efea35a159\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-c1c11ec816cb81dd6e402dee10acbfcd8a1b6ff6.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\a1cfaf1a8cc756d00abec2852eefcccb86303b26\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-d9f718c0658f12492a70c38ee2ec9b1ef8a7200d.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\9dbd1ff9469601ae967457e528651610940f5ea0\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-e4458ba26f19be5d34dea3fffea622ff70f74b82.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\e18401a7895020722ccc7ae19af2a14055382bf8\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-3b7c599410f08582c629a8f56a30e5a0652fd6a6.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\e2bcee38fdff5165390425c544f83e0c75e1e2bf\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-2e2167067d364d7bb9e07ff42ff48f6cce248eb5.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\27a17402c29182c412a196cf230294d5887de500\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-36e67eb5042ad28aece9710d8db98412d29ae546.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\8927a07d05888ccad400995f79099a47c65870d4\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-f23119834d46f953a5e7f5258a26e5424fefb4ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\.android\build-cache\35a21f2c39ba9c07cdd55580b6e82b14a8243054\output\jars\classes.jar"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-72a5a455d50b42647afa20264917841858640967.jar" />
+    </item>
+    <item
+        jar="C:\Users\jwqe764241\Documents\GitHub\illstop\app\lib\illstop_Module.jar"
+        revision="25.0.2"
+        sha1="75010eb3030ec9f8adc6d66ae041606bbbfa5bff">
+        <dex dex="C:\Users\jwqe764241\Documents\GitHub\illstop\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\illstop_Module-c56b19e45b94c85c3e80d106fc326a7ae204fca3.jar" />
+    </item>
+
+</items>

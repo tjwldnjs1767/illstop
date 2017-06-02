@@ -1,0 +1,3 @@
+diff a/app/.gitignore b/app/.gitignore	(rejected hunks)
+@@ -0,0 +1 @@
++/build
