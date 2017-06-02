@@ -14,6 +14,10 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+>>>>>>> origin/ui
 =======
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 >>>>>>> origin/ui
@@ -25,6 +29,12 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.INTERNET" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+>>>>>>> origin/ui
 =======
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -40,7 +50,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:roundIcon="@mipmap/ic_launcher_round"
+=======
+>>>>>>> origin/ui
 =======
 >>>>>>> origin/ui
         android:supportsRtl="true"
@@ -61,7 +74,11 @@
 
         <activity
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name=".MainActivity"
+=======
+            android:name="com.illstop.activity.MainActivity"
+>>>>>>> origin/ui
 =======
             android:name="com.illstop.activity.MainActivity"
 >>>>>>> origin/ui
@@ -74,7 +91,10 @@
         </activity>
     </application>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/ui
 =======
 >>>>>>> origin/ui
 </manifest>

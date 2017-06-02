@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
     android:gravity="center"
     android:padding="20dp">
 
@@ -37,6 +38,8 @@
         android:layout_below="@id/festival_tel" />
 
 =======
+=======
+>>>>>>> origin/ui
     android:gravity="center">
 
     <RelativeLayout
@@ -193,5 +196,8 @@
         android:text="확인"
         android:textColor="#ffffff"
         android:textSize="18dp" />
+<<<<<<< HEAD
+>>>>>>> origin/ui
+=======
 >>>>>>> origin/ui
 </RelativeLayout>

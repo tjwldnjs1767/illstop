@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">illstop</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="title_activity_maps">Map</string>
+=======
+    <string name="title_activity_maps">illstop</string>
+>>>>>>> origin/ui
 =======
     <string name="title_activity_maps">illstop</string>
 >>>>>>> origin/ui
