@@ -1,5 +1,6 @@
 package com.illstop.tourAPICall;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.illstop.data.LocationDataStore;
@@ -37,6 +38,8 @@ public class TourAPIThread extends Thread {
 
     private double Latitude;
     private double Longitude;
+    private LocationDataStore locationDataStore = null;
+    private Context m_Context;
 
     private boolean run = true;
 
@@ -44,6 +47,10 @@ public class TourAPIThread extends Thread {
 
     public ArrayList<Festival> getNearFestivals() {
         return nearFestivals;
+    }
+
+    public TourAPIThread(Context context){
+        m_Context = context;
     }
 
     public void run() {
@@ -87,11 +94,9 @@ public class TourAPIThread extends Thread {
         searchParamMap.put("cat1", "A02");
         searchParamMap.put("cat2", "A0207");
 
-        // 지역 코드, 시군구 코드 가져오기
-
         LocationDataStore locationDataStore = new LocationDataStore();
 
-        String[] codes = locationDataStore.getDbManager().getCode(locationDataStore.getLocationName(), locationDataStore.getLocality());
+        String[] codes = locationDataStore.getDbManager(m_Context).getCode(locationDataStore.getLocationName(), locationDataStore.getLocality());
 
         Log.d("checkCodes", codes[0] + " " + codes[1]);
         searchParamMap.put("areaCode", codes[0]);

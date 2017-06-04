@@ -1,11 +1,17 @@
 package com.illstop.activity;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -20,6 +26,7 @@ import com.illstop.R;
 import com.illstop.data.GeoCoderConverter;
 import com.illstop.listener.GoogleApiClientConnectionCallbacks;
 import com.illstop.listener.OnConnectionFailedListener;
+import com.illstop.listener.OnSwipeListener;
 import com.illstop.thread.FestivalMarkerThread;
 import com.illstop.tourAPICall.TourAPIThread;
 
@@ -42,6 +49,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleApiClientConnectionCallbacks callbacks;
     private OnConnectionFailedListener connectionFailedListener;
 
+    private ImageView iv = null;
+    private LinearLayout illLayoutWrapper = null;
+    private LinearLayout illLayout = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,9 +61,22 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_maps);
 
-
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        illLayout = (LinearLayout)findViewById(R.id.illLayout);
+        illLayoutWrapper = (LinearLayout)findViewById(R.id.illLayoutWrapper);
+
+        illLayout.setVisibility(View.GONE);
+
+        illLayoutWrapper.setOnTouchListener(new OnSwipeListener(this) {
+            public void onSwipeTop() {
+                illLayout.setVisibility(View.GONE);
+            }
+            public void onSwipeBottom() {
+                illLayout.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     @Override
@@ -160,7 +184,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         GeoCoderConverter geoCoderConverter = new GeoCoderConverter(this, latitude, longitude);
         geoCoderConverter.handlingGeocoder();
 
-        TourAPIThread tourAPIThread = new TourAPIThread();
+        TourAPIThread tourAPIThread = new TourAPIThread(getApplicationContext());
         tourAPIThread.start();
 
         try {

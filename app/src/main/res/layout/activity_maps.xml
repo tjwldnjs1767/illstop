@@ -12,18 +12,68 @@
         android:layout_height="match_parent"
         tools:context="com.illstop.MainActivity" />
 
-    <TextView
-        android:textSize="80px"
+    <!--스와이프 공간을 할당하기 위해서 TextView와 상태를 확인하는 ImageView를 감싸는 레이아웃을 Warpper에 추가하였음-->
+    <!--이 전에는 그냥 레이아웃 이었는데 그럴경구 Map의 터치 리스너와 곂치기 때문에 조금 생각해서 이렇게 한번 구현해봄-->
+    <!--이런식으로 Wrapper 안의 내용만 변경되고 TextView는 스와이프 공간 표시를 위해서 사용됨 다른것으로 교체 가능함-->
+    <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_illInfo"
+        android:id="@+id/illLayoutWrapper"
+        android:background="#EBEBEB">
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+        </TextView>
+        <!--스와이프 시에 이 부분의 Visibility만 영향을 받음-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/illLayout">
+            <ImageView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state7"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+        </LinearLayout>
 
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:singleLine="true"
-        android:scrollHorizontally="true"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit ="marquee_forever">
-    </TextView>
+    </LinearLayout>
 
 </RelativeLayout>

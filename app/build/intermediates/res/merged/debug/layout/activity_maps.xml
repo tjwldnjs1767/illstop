@@ -12,18 +12,64 @@
         android:layout_height="match_parent"
         tools:context="com.illstop.MainActivity" />
 
-    <TextView
-        android:textSize="80px"
+    <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_illInfo"
+        android:id="@+id/illLayoutWrapper"
+        android:background="#EBEBEB">
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+        </TextView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/illLayout">
+            <ImageView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+            <ImageView
+                android:id="@+id/state7"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/graph"/>
+        </LinearLayout>
 
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:singleLine="true"
-        android:scrollHorizontally="true"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit ="marquee_forever">
-    </TextView>
+    </LinearLayout>
 
 </RelativeLayout>

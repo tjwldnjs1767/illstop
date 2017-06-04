@@ -4,6 +4,14 @@
         "source": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }

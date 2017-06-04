@@ -10,31 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0ae8954-a291-4366-96f6-5d1131f2bd21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_android_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/LoadingActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/MainActivity.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/layout.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/fVt+whw36sxH4q_yQ6DlG_eeumE=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/rJCgtEFlQJgU8ql7JgBoHyLL5pU=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/00/496A0574DFFD3364F7EFFAE31D6AF223874446" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/00/496A0574DFFD3364F7EFFAE31D6AF223874446" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/00/6E674D4D2B7B40881243350EB6B033A937F8E8" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/00/6E674D4D2B7B40881243350EB6B033A937F8E8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/01/E3EAA15BA122170842A9EFABEBFB1B211BD734" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/01/E3EAA15BA122170842A9EFABEBFB1B211BD734" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/01/E47BC614811928C1237E535C5FDEFC873A99FD" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/01/E47BC614811928C1237E535C5FDEFC873A99FD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/03/37FD5163E5CA07166CBCA2A48FE0A9ACDC8B6B" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/03/37FD5163E5CA07166CBCA2A48FE0A9ACDC8B6B" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/04/ACEF6AD995649FB6B625EEC3BEF710476EEC26" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/04/ACEF6AD995649FB6B625EEC3BEF710476EEC26" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/05/6EAE151471B6992560EA0C89E0D63120E3E13F" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/05/6EAE151471B6992560EA0C89E0D63120E3E13F" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/05/DFE654C424EE116C2E4A1072E4128E0A39F8AB" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/05/DFE654C424EE116C2E4A1072E4128E0A39F8AB" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/07/29930C4B71EC8F8AAAD6C1FECB0C83286B2D3A" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/07/29930C4B71EC8F8AAAD6C1FECB0C83286B2D3A" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/0A/031FF460BBC348F1782FE0A11A49ABB138FC2F" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/0A/031FF460BBC348F1782FE0A11A49ABB138FC2F" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/0B/D5B6C8796F09897E479E9D552A91B59194D1A0" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/0B/D5B6C8796F09897E479E9D552A91B59194D1A0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/0D/1584FC52AF71CBCAABBB03E287B7AD1659AF3B" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/0D/1584FC52AF71CBCAABBB03E287B7AD1659AF3B" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/14/176D345C061C284CB6A58432FF94B20FC9F363" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/14/176D345C061C284CB6A58432FF94B20FC9F363" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/16/CD60986A6165A9617F7599C5B9001A7107E440" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/16/CD60986A6165A9617F7599C5B9001A7107E440" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/18/297774117A7B4A212E866A04D29689302CAAF8" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/18/297774117A7B4A212E866A04D29689302CAAF8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/1A/95A36A05098EF6C5B0C015C489686E848DCF02" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/1A/95A36A05098EF6C5B0C015C489686E848DCF02" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/1A/9839BC136E72253607FD39F2F5E1DA945CC70C" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/1A/9839BC136E72253607FD39F2F5E1DA945CC70C" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/1B/03802DB341A33BF0F39F21718882262B726672" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/1B/03802DB341A33BF0F39F21718882262B726672" />
@@ -45,7 +43,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/24/DC25487DFFBFFF47CAF6E910867464ED1A8DC3" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/24/DC25487DFFBFFF47CAF6E910867464ED1A8DC3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/25/5E860ABCCD5AC6B2A304F624AD93B1492C96AE" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/25/5E860ABCCD5AC6B2A304F624AD93B1492C96AE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/25/A8CCBE51C8B12B9D581B03CD8590C747325A1D" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/25/A8CCBE51C8B12B9D581B03CD8590C747325A1D" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/29/5F3374528F5E186454C6F12076FCCB31552C2B" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/29/5F3374528F5E186454C6F12076FCCB31552C2B" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/2B/04E6D71CB166BE8D42783361354327482FA666" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/2B/04E6D71CB166BE8D42783361354327482FA666" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/2E/EF07C980049FDE4A69FEC1CD2F54085FBA5BBC" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/2E/EF07C980049FDE4A69FEC1CD2F54085FBA5BBC" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/30/69DEC4F62A1833D20021E54893EBD6FCB491B9" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/30/69DEC4F62A1833D20021E54893EBD6FCB491B9" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/31/0C5CB39B0BB11D1AA4B3FE7C8E4D78C900B6B9" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/31/0C5CB39B0BB11D1AA4B3FE7C8E4D78C900B6B9" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/34/F931CA7D989D8180A0E9CE79AE40995F17DB40" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/34/F931CA7D989D8180A0E9CE79AE40995F17DB40" />
@@ -54,85 +53,106 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/3A/1E7680AE49ED03E49A1B73D21BE198B5E602CA" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/3A/1E7680AE49ED03E49A1B73D21BE198B5E602CA" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/3E/E02547CFE080B7E0DDC96641E3A2D3736E4FFA" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/3E/E02547CFE080B7E0DDC96641E3A2D3736E4FFA" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/3F/7CAE13DA80582375F8E8FF6C396D9303EE395D" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/3F/7CAE13DA80582375F8E8FF6C396D9303EE395D" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/44/4ECF43383D354831B864C8F0563B9AD44C2A6E" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/44/4ECF43383D354831B864C8F0563B9AD44C2A6E" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/4E/49629BA6E84D8F832D53496C13912ED521134C" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/4E/49629BA6E84D8F832D53496C13912ED521134C" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/51/2533D04C1D2C241695D0FA2F979D5963EDC044" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/51/2533D04C1D2C241695D0FA2F979D5963EDC044" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/56/7967736B19C93C32CD43C0D8EB5AD27E774A99" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/56/7967736B19C93C32CD43C0D8EB5AD27E774A99" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/57/5E934DBD1C809E5F40D2A3F184906ED4B726E5" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/57/5E934DBD1C809E5F40D2A3F184906ED4B726E5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5A/46550BA31766F9A94515D0A1CAA0FFD29B82D9" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5A/46550BA31766F9A94515D0A1CAA0FFD29B82D9" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5C/D9FA8989605031090E67DC6C6247CCC5331E3A" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5C/D9FA8989605031090E67DC6C6247CCC5331E3A" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5C/F1E1067525CB77B764072FB479D82C15596015" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5C/F1E1067525CB77B764072FB479D82C15596015" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5E/B7FA61FD36786CC2060C110843AE05AF54E635" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5E/B7FA61FD36786CC2060C110843AE05AF54E635" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5F/D533CE76F4418854EBC38939BDCA4572DD9B54" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5F/D533CE76F4418854EBC38939BDCA4572DD9B54" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5F/DBCE3D2A06C4B8E5C2DE2D37B061567FD19E44" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/5F/DBCE3D2A06C4B8E5C2DE2D37B061567FD19E44" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/60/18FDA8D0AD073EC80CFDD8107D61C5AAB709AF" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/60/18FDA8D0AD073EC80CFDD8107D61C5AAB709AF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/62/92D351E378A4BAEE1F428F1E23CF3F233FAB1C" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/62/92D351E378A4BAEE1F428F1E23CF3F233FAB1C" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/64/60CB13CECFDD2FCC8D81EEDC65C733D061C0BE" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/64/60CB13CECFDD2FCC8D81EEDC65C733D061C0BE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/65/95932A4C6E283E59184A79B217635E8A976CA0" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/65/95932A4C6E283E59184A79B217635E8A976CA0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/66/BA80489554F91C7892C41567C5ADB1F13D7BC2" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/66/BA80489554F91C7892C41567C5ADB1F13D7BC2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/67/E9DB700B250E19502EE4B5EBE926917F799EBF" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/67/E9DB700B250E19502EE4B5EBE926917F799EBF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/69/264CAF1B89CFDC4EB7BA4B19A45D293BF1D257" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/69/264CAF1B89CFDC4EB7BA4B19A45D293BF1D257" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/6A/D70BEE263CE641DBF34566CD770B6B29EDABED" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/6A/D70BEE263CE641DBF34566CD770B6B29EDABED" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/6E/69D08076BBBC603729E9D3CC2734DA3E282591" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/6E/69D08076BBBC603729E9D3CC2734DA3E282591" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/70/24AD0203C1C065380D112EF4EDCDEF39EB0E31" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/70/24AD0203C1C065380D112EF4EDCDEF39EB0E31" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/73/6B4E52F9DC798A956EE81E0BB804748E46AE9E" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/73/6B4E52F9DC798A956EE81E0BB804748E46AE9E" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/70/E79EE267A9AAB8E51BB742B2E0A2AE4EA0D70A" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/70/E79EE267A9AAB8E51BB742B2E0A2AE4EA0D70A" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/74/079F9433116A7400E7B80D28E5E8DCC99B37E6" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/74/079F9433116A7400E7B80D28E5E8DCC99B37E6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/74/8F14DDC30B4F882BF69F5C7EC024D6C300F917" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/74/8F14DDC30B4F882BF69F5C7EC024D6C300F917" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/75/0A4DB847D5854BDD4EBAE2E4F9DAF5B253867A" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/75/0A4DB847D5854BDD4EBAE2E4F9DAF5B253867A" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/75/8F64ED59D7C972F6E6D3C353E901D4401B4D5B" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/75/8F64ED59D7C972F6E6D3C353E901D4401B4D5B" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/75/DE807239CD9071CD484511E494DF6FC2A73D7F" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/75/DE807239CD9071CD484511E494DF6FC2A73D7F" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/77/665A927D96B3D5D5CC638088F58277267E5879" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/77/665A927D96B3D5D5CC638088F58277267E5879" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7A/87D0A56148DEF428B33B9D097743021062D081" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7A/87D0A56148DEF428B33B9D097743021062D081" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7E/F0975F15C59060F201FE9951F5649B473EB5B3" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7E/F0975F15C59060F201FE9951F5649B473EB5B3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7F/BD70374EAE3E9688FB3F1580D8AF64247B49E0" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7F/BD70374EAE3E9688FB3F1580D8AF64247B49E0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7F/F7CB988D00D05DDD18744DEF8FFF2E8B138978" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/7F/F7CB988D00D05DDD18744DEF8FFF2E8B138978" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/81/2A95122BC06DB5897A9C367C4F49C47FA147CE" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/81/2A95122BC06DB5897A9C367C4F49C47FA147CE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/82/DDA6A61D011A4E38204AD84B0AA043CD4BA101" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/82/DDA6A61D011A4E38204AD84B0AA043CD4BA101" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/82/304C8F31619F623E72C462263429E10B60A658" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/82/304C8F31619F623E72C462263429E10B60A658" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/83/5C167C6325AABAE3F71879F960A6DC2A057BA0" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/83/5C167C6325AABAE3F71879F960A6DC2A057BA0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/83/D2F79E0817CC30A34B4BDE09BEB85522025124" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/83/D2F79E0817CC30A34B4BDE09BEB85522025124" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/83/F87682F9D2382F2C1E3071D8475AC07ABDEA00" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/83/F87682F9D2382F2C1E3071D8475AC07ABDEA00" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/87/19EFF0EEE3AF6610CE010E07C1E23ED830F343" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/87/19EFF0EEE3AF6610CE010E07C1E23ED830F343" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/87/37A6D91EF914FBDF56B809656FABE5445F071B" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/87/37A6D91EF914FBDF56B809656FABE5445F071B" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8A/E3458BDD8B7FF1EF12CD656F11A7BDC741D4DB" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8A/E3458BDD8B7FF1EF12CD656F11A7BDC741D4DB" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8B/C3F9EAC06EF8B0578A74537461032FC4C21E80" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8B/C3F9EAC06EF8B0578A74537461032FC4C21E80" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8B/C9306662DE1E7E23D6BACE48310AC4FB4819DD" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8B/C9306662DE1E7E23D6BACE48310AC4FB4819DD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8C/298DE56F4CB0A0F499B2735D40CA7EAF85F885" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/8C/298DE56F4CB0A0F499B2735D40CA7EAF85F885" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/91/C3F000FE65577EDB6A99DDE7A46E600308F65C" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/91/C3F000FE65577EDB6A99DDE7A46E600308F65C" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/94/CDCC95DF7C9D2C84A23557C17AA6FC5E619B6A" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/94/CDCC95DF7C9D2C84A23557C17AA6FC5E619B6A" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/95/D99DB6F6786907B201A9AE8CFE5E6B05B3F311" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/95/D99DB6F6786907B201A9AE8CFE5E6B05B3F311" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/98/55C117BBB76A0B6791E03219D167507E01B0D4" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/98/55C117BBB76A0B6791E03219D167507E01B0D4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/99/CE1248F82012544A7B9B243B7409EE8216FAFE" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/99/CE1248F82012544A7B9B243B7409EE8216FAFE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/9B/E5EEE9079758058D56397413BB0B1E3B1D2128" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/9B/E5EEE9079758058D56397413BB0B1E3B1D2128" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/9F/8B492BD17EDE712BC54A7BF8EE5CB35E77CFA0" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/9F/8B492BD17EDE712BC54A7BF8EE5CB35E77CFA0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/8BC4F9CBF271242CA87BF00FBF743D56010120" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/8BC4F9CBF271242CA87BF00FBF743D56010120" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/117BDB7460E4FD1FBFA808D0D277B673E86ABC" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/117BDB7460E4FD1FBFA808D0D277B673E86ABC" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/915B93360DCFE8999F877CDDED6C9A4C656891" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/915B93360DCFE8999F877CDDED6C9A4C656891" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/BDF5D86A5005200F56709A7E663367216D265D" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A0/BDF5D86A5005200F56709A7E663367216D265D" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A1/1E606774E53DD2C48FC76D30894A4B50D23839" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A1/1E606774E53DD2C48FC76D30894A4B50D23839" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A5/C27180A8DC96BFBD0927F8E373CB5E5B443134" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/A5/C27180A8DC96BFBD0927F8E373CB5E5B443134" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AA/24AB41BB9F2FBC62FF861ADB48D60AEAD4FE44" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AA/24AB41BB9F2FBC62FF861ADB48D60AEAD4FE44" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AB/58714F64AFEE93D91DA4D2F6429ED7965ABDCF" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AB/58714F64AFEE93D91DA4D2F6429ED7965ABDCF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AC/0DE3E701E26466A6E48A05666BA8F8A845B293" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AC/0DE3E701E26466A6E48A05666BA8F8A845B293" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AD/6CE3B260864C7E2FFFAA37BAF707ED68AF24F2" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/AD/6CE3B260864C7E2FFFAA37BAF707ED68AF24F2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B0/D705A0B7E89D5CB4A39E6FBE1E5FB6F29EB7D6" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B0/D705A0B7E89D5CB4A39E6FBE1E5FB6F29EB7D6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B3/FEE784FF20776DB7F67783877B13FDE1A66F2C" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B3/FEE784FF20776DB7F67783877B13FDE1A66F2C" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B7/BC51EF4B2A4DA2A0A71609C94BB3CF00C3A85D" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B7/BC51EF4B2A4DA2A0A71609C94BB3CF00C3A85D" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B8/443456153ECDD6D565F150466F7B6572E97972" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B8/443456153ECDD6D565F150466F7B6572E97972" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B8/7530C3728DF24804ECEABEFF1EBBC006A8631E" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/B8/7530C3728DF24804ECEABEFF1EBBC006A8631E" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BA/E57890B62309353A90EB44A8145C70589E7B19" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BA/E57890B62309353A90EB44A8145C70589E7B19" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BD/C6B0D9A80CBB1286B5F978D1962726007F2D07" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BD/C6B0D9A80CBB1286B5F978D1962726007F2D07" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BE/E3B836F87493DA9FC67CBA0A51327E879B6B48" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BE/E3B836F87493DA9FC67CBA0A51327E879B6B48" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BE/FE683B24CFCF8E87CECC61BE45A8D63B6E94FB" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/BE/FE683B24CFCF8E87CECC61BE45A8D63B6E94FB" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C0/92ABD8994050C7A758A7FEEBCA55F49C0AE2B1" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C0/92ABD8994050C7A758A7FEEBCA55F49C0AE2B1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C0/B5BF2580F03F2A7D776498AD4593030E270975" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C0/B5BF2580F03F2A7D776498AD4593030E270975" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C1/21240D9A0011FBBF4B8FDDC70E6D77AC35CD0B" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C1/21240D9A0011FBBF4B8FDDC70E6D77AC35CD0B" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C4/A03E1CE6A4714D49AFD26C0AB1450AC3A43731" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C4/A03E1CE6A4714D49AFD26C0AB1450AC3A43731" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C9/03501AEFB72303C4776590542E24EAD639F4E4" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C9/03501AEFB72303C4776590542E24EAD639F4E4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C6/7FEF1586F55ED02E10591A413FA3A6C744D8D2" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C6/7FEF1586F55ED02E10591A413FA3A6C744D8D2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C9/9488C9A8FB1E47D360FAB8DAA158A19287AF99" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/C9/9488C9A8FB1E47D360FAB8DAA158A19287AF99" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/CA/11651279CCDC9A99EDA4A6D7A8C75D95A5E038" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/CA/11651279CCDC9A99EDA4A6D7A8C75D95A5E038" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/CD/AF3BC7A264B0F05EF2E156281BD42C5B79C219" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/CD/AF3BC7A264B0F05EF2E156281BD42C5B79C219" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/D4/C9C65AAD587B92385C3E35704011D794BB80DA" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/D4/C9C65AAD587B92385C3E35704011D794BB80DA" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/D6/BEDE8A94EC81F30A4A28D0E954ACAC50ACE3EA" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/D6/BEDE8A94EC81F30A4A28D0E954ACAC50ACE3EA" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/D8/A6B5B10FA7F7B15D2058728E09B62F829E21D4" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/D8/A6B5B10FA7F7B15D2058728E09B62F829E21D4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DA/538156E745E7C9AC19869451D8D1747699EA32" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DA/538156E745E7C9AC19869451D8D1747699EA32" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DD/46333C53D1186F3C344AAB408CD6CDCAF5FED7" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DD/46333C53D1186F3C344AAB408CD6CDCAF5FED7" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DE/86EF389F4B06BAFC0A3062B73B73C3ED82E0F9" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DE/86EF389F4B06BAFC0A3062B73B73C3ED82E0F9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DF/471027EE3804A8D2D06E5BDE9438C539D6DBFF" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/DF/471027EE3804A8D2D06E5BDE9438C539D6DBFF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E1/0F402D416A810DBE0D3D09A6175499E547A3D4" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E1/0F402D416A810DBE0D3D09A6175499E547A3D4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E4/2A9862BBFBF12FA89245EFD4069323D9E592F6" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E4/2A9862BBFBF12FA89245EFD4069323D9E592F6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E8/D13351932B5C5F362714956066FAC716D5906E" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E8/D13351932B5C5F362714956066FAC716D5906E" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E9/327091B610FD4C439A80BA0279DD6A781C94DB" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E9/327091B610FD4C439A80BA0279DD6A781C94DB" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E9/764D0C806F140F2D0C141C046F22A3C5FFCA32" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E9/764D0C806F140F2D0C141C046F22A3C5FFCA32" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E9/80CF2D98E62290F9B245D476F759022DB785EA" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/E9/80CF2D98E62290F9B245D476F759022DB785EA" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/EA/6414D0558F047D75ADC67FDF37C74835ACDA86" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/EA/6414D0558F047D75ADC67FDF37C74835ACDA86" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/EB/21515793A2DAA382FEF7AB5338ABC827938493" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/EB/21515793A2DAA382FEF7AB5338ABC827938493" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F1/73686980C7B9E2438A1B6A92B38B8C8CA77629" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F1/73686980C7B9E2438A1B6A92B38B8C8CA77629" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/ED/ECB71885D18FF38C2035CA714E6797494ED6A2" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/ED/ECB71885D18FF38C2035CA714E6797494ED6A2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F2/188FF0CE0BDA7BD56EA4479174B2AF26030789" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F2/188FF0CE0BDA7BD56EA4479174B2AF26030789" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F5/DDDBC74BD8C61DA5A65E13BB857E3403001E03" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F5/DDDBC74BD8C61DA5A65E13BB857E3403001E03" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F6/4F67059F3D6EFCF96BF68633109C4D42C73357" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F6/4F67059F3D6EFCF96BF68633109C4D42C73357" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F8/803B748076CA8DE9D7B6720ACE16A14BE5F65E" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/F8/803B748076CA8DE9D7B6720ACE16A14BE5F65E" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/FA/FEE3D8DC3B4D508C77268005033606F4C81658" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/FA/FEE3D8DC3B4D508C77268005033606F4C81658" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/FF/C9785A8364216305576E3175AB53CE25969732" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/transformJackWithJackForDebug/FF/C9785A8364216305576E3175AB53CE25969732" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/packaged/debug/classes.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged/debug/classes.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jack/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/jack/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_25_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" />
@@ -154,13 +174,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/transition_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/transition_25_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/illstop/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/illstop/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/illstop/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/illstop/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/illstop/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/illstop/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
@@ -327,6 +345,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xhdpi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xhdpi.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xxhdpi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xxhdpi.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xxxhdpi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xxxhdpi.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/raw.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/raw.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
@@ -524,7 +543,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_action.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_action.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml" />
@@ -535,7 +553,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_festival_info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_festival_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-af/values-af.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-am/values-am.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-am/values-am.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ar/values-ar.xml" />
@@ -671,25 +688,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/FestivalInfoDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/FestivalInfoDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" afterPath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/DBManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/IllAreaDB.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/IllAreaDB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/listener/GoogleApiClientConnectionCallbacks.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/listener/GoogleApiClientConnectionCallbacks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnConnectionFailedListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnConnectionFailedListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnSwipeListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnSwipeListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/thread/FestivalMarkerThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/thread/FestivalMarkerThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIHTTP.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIHTTP.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_festival_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_festival_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/jack-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/jack-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illstop.iml" afterPath="$PROJECT_DIR$/illstop.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="illstop.iws" />
@@ -739,104 +743,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GeoCoderConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java">
+      <file leaf-file-name="graph.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/graph.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationDataStore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java">
+      <file leaf-file-name="level_veryhigh.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_veryhigh.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="309">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleApiClientConnectionCallbacks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/GoogleApiClientConnectionCallbacks.java">
+      <file leaf-file-name="level_high.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_high.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnConnectionFailedListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnConnectionFailedListener.java">
+      <file leaf-file-name="level_normal.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_normal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnSwipeListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnSwipeListener.java">
+      <file leaf-file-name="level_low.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_low.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FestivalMarkerThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/thread/FestivalMarkerThread.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="260">
+              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2808#2809#0" expanded="true" />
+                <element signature="e#2850#2851#0" expanded="true" />
+                <element signature="e#2919#2920#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TourAPIHTTP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIHTTP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TourAPIThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IllTextUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/Utils/IllTextUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_loading.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
+      <file leaf-file-name="activity_maps.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+            <state relative-caret-position="-747">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FestivalInfoDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/FestivalInfoDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="181" column="18" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -844,13 +843,20 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\dsm2015\.gradle\wrapper\dists\gradle-3.3-all\55gk2rcmfc6p2dg9u9ohc3hw9\gradle-3.3" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\jwqe764241\.gradle\wrapper\dists\gradle-3.3-all\55gk2rcmfc6p2dg9u9ohc3hw9\gradle-3.3" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -2406,6 +2412,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="C:\Users\dsm2015\Documents\illstop" value="4489091475408" />
+        <entry key="C:\Users\jwqe764241\Documents\GitHub\illstop" value="4489444503203" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2709,20 +2716,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/LoadingActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/thread/FestivalMarkerThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/data/DBManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java" />
+        <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/level_low.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/graph.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/level_normal.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/level_veryhigh.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/level_high.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2751,7 +2768,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
@@ -2759,6 +2775,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="illstop" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="illstop" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2969,10 +3007,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="device.picker.selection" value="Nexus_5X_API_22" />
+    <property name="device.picker.selection" value="Nexus_5X_API_25" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -3161,31 +3200,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="app" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -3335,31 +3349,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07070707" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.421875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3379,99 +3393,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4시 시작 대강 구현 및 잠시 휴식 겸 커밋&#10;&#10;--&gt; Level 설정 가능케 함&#10;--&gt; 스와이프 시 내려오게 함" />
+    <MESSAGE value="4시 시작 대강 구현 및 잠시 휴식 겸 커밋&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="4시 시작 대강 구현 및 잠시 휴식 겸 커밋&#10;" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-25/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="977">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/FestivalInfoDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/LoadingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/IllAreaDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3517,35 +3456,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1425">
+          <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+          <folding>
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="1577">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/Utils/IllTextUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
+        <state relative-caret-position="171">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_festival_info.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -3555,8 +3486,342 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="361">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/GoogleApiClientConnectionCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnConnectionFailedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnSwipeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/thread/FestivalMarkerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIHTTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/Utils/IllTextUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
           <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="977">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/LoadingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/IllAreaDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnConnectionFailedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/thread/FestivalMarkerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIHTTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/MainActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_festival_info.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/GoogleApiClientConnectionCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/GeoCoderConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/tourAPICall/TourAPIThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/Utils/IllTextUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/data/LocationDataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/listener/OnSwipeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1002">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/FestivalInfoDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="181" column="18" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/graph.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_veryhigh.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_high.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_low.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/level_normal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/illstop/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2808#2809#0" expanded="true" />
+            <element signature="e#2850#2851#0" expanded="true" />
+            <element signature="e#2919#2920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-747">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding />
         </state>
       </provider>
