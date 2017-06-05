@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/illLayoutWrapper"
-        android:background="#EBEBEB">
+        android:background="#FFFFFF">
         <TextView
             android:layout_height="20dp"
             android:layout_width="match_parent">
@@ -27,27 +27,60 @@
         <!--스와이프 시에 이 부분의 Visibility만 영향을 받음-->
         <LinearLayout
             android:orientation="vertical"
+            android:background="#CC000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/illLayout">
-            <ImageView
-                android:id="@+id/state"
+            <include
+                android:id="@+id/xml_state1"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state2"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state3"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state4"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state5"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state6"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state7"
+                layout="@layout/xml_state_tile"/>
+            <!--
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
-            <ImageView
-                android:id="@+id/state2"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
-            <ImageView
-                android:id="@+id/state3"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
+                android:layout_margin="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/level_low"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/level_normal"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/level_high"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/level_veryhigh"/>
+            </LinearLayout>
+            -->
+            <!--
             <ImageView
                 android:id="@+id/state4"
                 android:layout_width="match_parent"
@@ -72,6 +105,7 @@
                 android:layout_height="20dp"
                 android:layout_margin="5dp"
                 android:src="@drawable/graph"/>
+                -->
         </LinearLayout>
 
     </LinearLayout>

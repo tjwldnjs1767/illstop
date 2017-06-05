@@ -8,6 +8,10 @@
         "source": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_app_default.png",
+        "source": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\src\\main\\res\\mipmap-hdpi\\ic_app_default.png"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },

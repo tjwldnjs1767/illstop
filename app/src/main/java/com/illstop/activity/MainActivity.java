@@ -7,6 +7,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -14,6 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.IllnessManager.Parse.QUERYTYPE;
+import com.IllnessManager.Parse.Response;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
@@ -23,6 +26,7 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.illstop.R;
+import com.illstop.Utils.IllUtils;
 import com.illstop.data.GeoCoderConverter;
 import com.illstop.listener.GoogleApiClientConnectionCallbacks;
 import com.illstop.listener.OnConnectionFailedListener;
@@ -53,6 +57,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private LinearLayout illLayoutWrapper = null;
     private LinearLayout illLayout = null;
 
+    private ArrayList<View> includeArr = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +83,27 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 illLayout.setVisibility(View.VISIBLE);
             }
         });
+
+        includeArr = new ArrayList<View>(IllUtils.MAX_STATE_NUM);
+            includeArr.add((View)findViewById(R.id.xml_state1));
+            includeArr.add((View)findViewById(R.id.xml_state2));
+            includeArr.add((View)findViewById(R.id.xml_state3));
+            includeArr.add((View)findViewById(R.id.xml_state4));
+            includeArr.add((View)findViewById(R.id.xml_state5));
+            includeArr.add((View)findViewById(R.id.xml_state6));
+            includeArr.add((View)findViewById(R.id.xml_state7));
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for(int i = 0; i < IllUtils.MAX_STATE_NUM; ++i){
+                    TextView tv = (TextView)includeArr.get(i).findViewById(R.id.state_text);
+                    tv.setText(IllUtils.getType(i));
+                    Response response = IllUtils.getResponse(IllUtils.getEnumVal(i), "1100000000");
+                    IllUtils.setActive(includeArr.get(i), (response == null || response.getTodayLevel() == -1) ? 5 : response.getTodayLevel());
+                }
+            }
+        }).start();
     }
 
     @Override

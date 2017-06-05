@@ -90,7 +90,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jw
 	android:allowBackup
 		ADDED from C:\Users\jwqe764241\Documents\GitHub\illstop\app\src\main\AndroidManifest.xml:33:9-35
 	android:icon
-		ADDED from C:\Users\jwqe764241\Documents\GitHub\illstop\app\src\main\AndroidManifest.xml:34:9-43
+		ADDED from C:\Users\jwqe764241\Documents\GitHub\illstop\app\src\main\AndroidManifest.xml:34:9-46
 	android:theme
 		ADDED from C:\Users\jwqe764241\Documents\GitHub\illstop\app\src\main\AndroidManifest.xml:37:9-40
 meta-data#com.google.android.geo.API_KEY
