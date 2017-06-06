@@ -1,0 +1,11 @@
+.git
+.gradle
+build
+gradle
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+master.iml
+settings.gradle
