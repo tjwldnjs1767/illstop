@@ -85,8 +85,18 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 animate.setFillAfter(true);
                 animate.setAnimationListener(new Animation.AnimationListener() {
                     public void onAnimationEnd(Animation animation) {
-                        illLayout.setVisibility(View.GONE);
-                        wrapper_swipelabel.setVisibility(View.VISIBLE);
+                        TranslateAnimation animate_swipelabel = new TranslateAnimation(0, 0, -wrapper_swipelabel.getHeight(), 0);
+                        animate_swipelabel.setDuration(500);
+                        animate_swipelabel.setFillAfter(true);
+                        animate_swipelabel.setAnimationListener(new Animation.AnimationListener() {
+                            public void onAnimationEnd(Animation animation) {
+                                illLayout.setVisibility(View.GONE);
+                                wrapper_swipelabel.setVisibility(View.VISIBLE);
+                            }
+                            public void onAnimationStart(Animation animation) {;}
+                            public void onAnimationRepeat(Animation animation) {;}
+                        });
+                        wrapper_swipelabel.startAnimation(animate_swipelabel);
                     }
                     public void onAnimationStart(Animation animation) {;}
                     public void onAnimationRepeat(Animation animation) {;}
@@ -94,14 +104,25 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 illLayout.startAnimation(animate);
             }
             public void onSwipeBottom() {
-                wrapper_swipelabel.setVisibility(View.GONE);
+                TranslateAnimation animate_swipelabel = new TranslateAnimation(0, 0, 0, -wrapper_swipelabel.getHeight());
+                animate_swipelabel.setDuration(200);
+                animate_swipelabel.setFillAfter(true);
+                animate_swipelabel.setAnimationListener(new Animation.AnimationListener() {
+                    public void onAnimationEnd(Animation animation) {
+                        wrapper_swipelabel.setVisibility(View.GONE);
 
-                TranslateAnimation animate = new TranslateAnimation(0, 0, -illLayout.getHeight(), 0);
-                animate.setDuration(500);
-                animate.setFillAfter(true);
-                illLayout.startAnimation(animate);
+                        TranslateAnimation animate = new TranslateAnimation(0, 0, -illLayout.getHeight(), 0);
+                        animate.setDuration(500);
+                        animate.setFillAfter(true);
+                        illLayout.startAnimation(animate);
 
-                illLayout.setVisibility(View.VISIBLE);
+                        illLayout.setVisibility(View.VISIBLE);
+                    }
+                    public void onAnimationStart(Animation animation) {;}
+                    public void onAnimationRepeat(Animation animation) {;}
+                });
+
+                wrapper_swipelabel.startAnimation(animate_swipelabel);
             }
         });
 
