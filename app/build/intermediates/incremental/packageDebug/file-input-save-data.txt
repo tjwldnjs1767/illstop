@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jun 06 13:45:48 KST 2017
+#Tue Jun 06 14:14:31 KST 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml
 14.set=ANDROID_RESOURCE

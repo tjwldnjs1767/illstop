@@ -11,15 +11,15 @@ f:prebuilt/com/illstop/tourAPICall/TourAPIThread.dex
 f:prebuilt/com/illstop/tourAPICall/TourAPIHTTP.dex
 f:prebuilt/com/illstop/activity/MainActivity$1.dex
 f:prebuilt/com/illstop/activity/MainActivity.dex
-f:prebuilt/com/illstop/activity/FestivalInfoDialog$2.dex
 f:prebuilt/com/illstop/activity/LoadingActivity$1.dex
+f:prebuilt/com/illstop/activity/FestivalInfoDialog$2.dex
 f:prebuilt/com/illstop/activity/MainActivity$2$2.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog$1.dex
 f:prebuilt/com/illstop/activity/MainActivity$2.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog$3$1.dex
-f:prebuilt/com/illstop/activity/LoadingActivity.dex
 f:prebuilt/com/illstop/activity/MainActivity$2$1.dex
+f:prebuilt/com/illstop/activity/LoadingActivity.dex
 f:prebuilt/com/illstop/activity/MainActivity$2$1$1.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog$3.dex
 f:prebuilt/com/illstop/activity/MainActivity$3.dex
@@ -42,8 +42,8 @@ f:prebuilt/com/illstop/R.dex
 f:prebuilt/com/illstop/R$anim.dex
 f:prebuilt/com/illstop/R$drawable.dex
 f:prebuilt/com/illstop/thread/FestivalMarkerThread$1.dex
-f:prebuilt/com/illstop/thread/FestivalMarkerThread.dex
 f:prebuilt/com/illstop/thread/FestivalMarkerThread$1$1.dex
+f:prebuilt/com/illstop/thread/FestivalMarkerThread.dex
 f:prebuilt/com/illstop/R$color.dex
 f:prebuilt/com/illstop/R$styleable.dex
 f:prebuilt/com/illstop/Utils/IllUtils.dex
@@ -52,8 +52,8 @@ f:prebuilt/com/illstop/Manifest$permission.dex
 f:prebuilt/com/illstop/R$string.dex
 f:prebuilt/com/illstop/R$dimen.dex
 f:prebuilt/com/illstop/R$raw.dex
-f:prebuilt/com/illstop/R$bool.dex
 f:prebuilt/com/illstop/R$mipmap.dex
+f:prebuilt/com/illstop/R$bool.dex
 f:prebuilt/com/illstop/R$layout.dex
 f:prebuilt/com/google/android/gms/internal/zzabr$zza.dex
 f:prebuilt/com/google/android/gms/internal/zzabt.dex
@@ -1767,8 +1767,8 @@ f:prebuilt/android/support/v7/appcompat/R$drawable.dex
 f:prebuilt/android/support/v7/appcompat/R$color.dex
 f:prebuilt/android/support/v7/appcompat/R$styleable.dex
 f:prebuilt/android/support/v7/appcompat/R$id.dex
-f:prebuilt/android/support/v7/appcompat/R$integer.dex
 f:prebuilt/android/support/v7/appcompat/R$attr.dex
+f:prebuilt/android/support/v7/appcompat/R$integer.dex
 f:prebuilt/android/support/v7/appcompat/R$style.dex
 f:prebuilt/android/support/v7/appcompat/R$string.dex
 f:prebuilt/android/support/v7/appcompat/R$dimen.dex
@@ -3409,8 +3409,8 @@ f:jayce/com/illstop/data/DBManager.jayce
 f:jayce/com/illstop/data/IllAreaDB.jayce
 f:jayce/com/illstop/data/LocationDataStore.jayce
 f:jayce/com/illstop/data/GeoCoderConverter.jayce
-f:jayce/com/illstop/activity/MainActivity$3.jayce
 f:jayce/com/illstop/activity/MainActivity$2$2.jayce
+f:jayce/com/illstop/activity/MainActivity$3.jayce
 f:jayce/com/illstop/activity/FestivalInfoDialog$3$1.jayce
 f:jayce/com/illstop/activity/FestivalInfoDialog$1.jayce
 f:jayce/com/illstop/activity/MainActivity$2$1.jayce

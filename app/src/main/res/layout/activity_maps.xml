@@ -29,7 +29,7 @@
         <LinearLayout
             android:visibility="gone"
             android:orientation="vertical"
-            android:background="#D9FFFFFF"
+            android:background="#D9F2F2F2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/illLayout">
