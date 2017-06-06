@@ -15,19 +15,21 @@
     <!--스와이프 공간을 할당하기 위해서 TextView와 상태를 확인하는 ImageView를 감싸는 레이아웃을 Warpper에 추가하였음-->
     <!--이 전에는 그냥 레이아웃 이었는데 그럴경구 Map의 터치 리스너와 곂치기 때문에 조금 생각해서 이렇게 한번 구현해봄-->
     <!--이런식으로 Wrapper 안의 내용만 변경되고 TextView는 스와이프 공간 표시를 위해서 사용됨 다른것으로 교체 가능함-->
-    <LinearLayout android:orientation="vertical"
+    <FrameLayout android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/illLayoutWrapper"
-        android:background="#FFFFFF">
+        android:id="@+id/illLayoutWrapper">
         <TextView
+            android:id="@+id/wrapper_swipelabel"
             android:layout_height="20dp"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:background="@drawable/level_notfound">
         </TextView>
         <!--스와이프 시에 이 부분의 Visibility만 영향을 받음-->
         <LinearLayout
+            android:visibility="gone"
             android:orientation="vertical"
-            android:background="#CC000000"
+            android:background="#D9FFFFFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/illLayout">
@@ -52,62 +54,6 @@
             <include
                 android:id="@+id/xml_state7"
                 layout="@layout/xml_state_tile"/>
-            <!--
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/level_low"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/level_normal"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/level_high"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/level_veryhigh"/>
-            </LinearLayout>
-            -->
-            <!--
-            <ImageView
-                android:id="@+id/state4"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
-            <ImageView
-                android:id="@+id/state5"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
-            <ImageView
-                android:id="@+id/state6"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
-            <ImageView
-                android:id="@+id/state7"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/graph"/>
-                -->
         </LinearLayout>
-
-    </LinearLayout>
-
+    </FrameLayout>
 </RelativeLayout>

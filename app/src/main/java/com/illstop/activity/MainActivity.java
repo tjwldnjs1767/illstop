@@ -10,6 +10,9 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -54,8 +57,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private OnConnectionFailedListener connectionFailedListener;
 
     private ImageView iv = null;
-    private LinearLayout illLayoutWrapper = null;
+    private FrameLayout illLayoutWrapper = null;
     private LinearLayout illLayout = null;
+    private TextView wrapper_swipelabel = null;
 
     private ArrayList<View> includeArr = null;
 
@@ -71,15 +75,32 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
         illLayout = (LinearLayout)findViewById(R.id.illLayout);
-        illLayoutWrapper = (LinearLayout)findViewById(R.id.illLayoutWrapper);
-
-        illLayout.setVisibility(View.GONE);
+        illLayoutWrapper = (FrameLayout)findViewById(R.id.illLayoutWrapper);
+        wrapper_swipelabel = (TextView)findViewById(R.id.wrapper_swipelabel);
 
         illLayoutWrapper.setOnTouchListener(new OnSwipeListener(this) {
             public void onSwipeTop() {
-                illLayout.setVisibility(View.GONE);
+                TranslateAnimation animate = new TranslateAnimation(0, 0, 0, -illLayout.getHeight());
+                animate.setDuration(500);
+                animate.setFillAfter(true);
+                animate.setAnimationListener(new Animation.AnimationListener() {
+                    public void onAnimationEnd(Animation animation) {
+                        illLayout.setVisibility(View.GONE);
+                        wrapper_swipelabel.setVisibility(View.VISIBLE);
+                    }
+                    public void onAnimationStart(Animation animation) {;}
+                    public void onAnimationRepeat(Animation animation) {;}
+                });
+                illLayout.startAnimation(animate);
             }
             public void onSwipeBottom() {
+                wrapper_swipelabel.setVisibility(View.GONE);
+
+                TranslateAnimation animate = new TranslateAnimation(0, 0, -illLayout.getHeight(), 0);
+                animate.setDuration(500);
+                animate.setFillAfter(true);
+                illLayout.startAnimation(animate);
+
                 illLayout.setVisibility(View.VISIBLE);
             }
         });

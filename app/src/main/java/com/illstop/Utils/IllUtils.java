@@ -21,7 +21,7 @@ import java.net.URL;
 public class IllUtils {
 
     public static int MAX_STATE_NUM = 7;
-    public static int DISABLE_ALPHA = 60;
+    public static int DISABLE_ALPHA = 40;
 
     public static Response getResponse(QUERYTYPE querytype, String areaNo){
 
