@@ -1,0 +1,7 @@
+build
+lib
+.gitignore.rej
+app.iml
+build.gradle
+build.gradle.rej
+proguard-rules.pro

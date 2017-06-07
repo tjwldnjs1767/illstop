@@ -87,17 +87,17 @@ public class TourAPIThread extends Thread {
         searchParamMap.put("cat1", "A02");
         searchParamMap.put("cat2", "A0207");
 
-        // 지역 코드, 시군구 코드 가져오기
-
+        /* 지역 코드, 시군구 코드, 축제 검색 날짜 파라미터 설정 */
         LocationDataStore locationDataStore = new LocationDataStore();
-
         String[] codes = locationDataStore.getDbManager().getCode(locationDataStore.getLocationName(), locationDataStore.getLocality());
 
         Log.d("checkCodes", codes[0] + " " + codes[1]);
         searchParamMap.put("areaCode", codes[0]);
         searchParamMap.put("sigunguCode", codes[1]);
         searchParamMap.put("numOfRows", String.valueOf(numOfRows));
-        searchParamMap.put("eventStartDate", tourAPIDateFormat.format(Calendar.getInstance().getTime())); // 오늘 날짜 설정
+        // 축제 시작 날짜와 종료 날짜를 오늘로 설정하면 진행 중인 축제만 검색 가능
+        searchParamMap.put("eventStartDate", tourAPIDateFormat.format(Calendar.getInstance().getTime()));
+        searchParamMap.put("eventEndDate", tourAPIDateFormat.format(Calendar.getInstance().getTime()));
 
         try { // "yyyyMMdd" 포맷에 맞춰 오늘 날짜 확인
             today = tourAPIDateFormat.parse(tourAPIDateFormat.format(Calendar.getInstance().getTime())); // 오늘 날짜
