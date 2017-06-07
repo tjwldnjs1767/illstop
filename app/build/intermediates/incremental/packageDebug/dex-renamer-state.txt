@@ -1,4 +1,4 @@
-#Wed Jun 07 08:28:47 KST 2017
-base.0=C\:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main
+#Wed Jun 07 13:36:20 KST 2017
+base.0=C\:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=C\:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main\\classes.dex
