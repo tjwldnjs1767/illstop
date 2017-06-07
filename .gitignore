@@ -1,5 +1,6 @@
 .git
 .gradle
+.idea
 build
 gradle
 build.gradle
@@ -9,3 +10,10 @@ gradlew.bat
 local.properties
 master.iml
 settings.gradle
+app/build
+app/lib
+app/.gitignore.rej
+app/app.iml
+app/build.gradle
+app/build.gradle.rej
+app/proguard-rules.pro
