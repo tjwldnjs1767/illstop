@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\raw\\area_codes.txt",
         "source": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\src\\main\\res\\raw\\area_codes.txt"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\res\\merged\\debug\\raw\\area_codes.txt",
+        "source": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\src\\main\\res\\raw\\area_codes.txt"
     }
 ]

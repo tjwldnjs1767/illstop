@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
         "source": "C:\\Users\\dsm2015\\.android\\build-cache\\e46f90fc3e2863a9e00a0e9058de7cb1d01dfe6b\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },

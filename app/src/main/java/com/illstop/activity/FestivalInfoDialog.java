@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
@@ -57,6 +58,8 @@ public class FestivalInfoDialog extends DialogFragment {
     }
 
     private void initView(View v) {
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "jejugothic.ttf");
+
         telBtn = (TextView) v.findViewById(R.id.festival_tel);
         addrTv = (TextView) v.findViewById(R.id.festival_addr);
         periodTv = (TextView) v.findViewById(R.id.festival_end_day);
@@ -67,6 +70,12 @@ public class FestivalInfoDialog extends DialogFragment {
         titleTv.setSelected(true);
         addrTv.setSelected(true);
         remainingDistanceTv.setPaintFlags(remainingDistanceTv.getPaintFlags() | Paint.FAKE_BOLD_TEXT_FLAG);
+
+        telBtn.setTypeface(font);
+        addrTv.setTypeface(font);
+        periodTv.setTypeface(font);
+        remainingDistanceTv.setTypeface(font);
+        titleTv.setTypeface(font);
     }
 
     private void initMarkerIndex() {
