@@ -1,5 +1,7 @@
 package com.illstop.tourAPICall;
 
+import com.illstop.data.GeoCoderConverter;
+
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -23,12 +25,6 @@ import Definition.OperationCode;
 import Definition.OperationURL;
 
 public class TourAPIHTTP {
-    private final static String SERVICEKEY = "mJOEcE4eFDUTJd8nBIasxDwAws4fIdm64UmPnM6qGSJCmLubYafK9MxfKDmp4P0G71WBf8RQC1a09ebXz%2Ffxig%3D%3D";
-
-    public static String getSERVICEKEY() {
-        return SERVICEKEY;
-    }
-
     // API 호출, 두 번째 인자로 오퍼레이션 구분
     public Document getNearFestival(HashMap<String, String> paramMap, OperationCode operation) {
         if (paramMap == null || paramMap.size() == 0) {
@@ -72,6 +68,10 @@ public class TourAPIHTTP {
                     url = OperationURL.LOCATIONBASEDLISTURL + parameters;
                     break;
 
+                case NAVERREVERSEGEOCODE:
+                    url = OperationURL.NAVERREVERSEGEOCODE + parameters;
+                    break;
+
                 case UNKNOWN:
                     url = "";
                     break;
@@ -81,7 +81,10 @@ public class TourAPIHTTP {
             HttpURLConnection httpURLConnection = (HttpURLConnection) festivalAPIURL.openConnection();
             httpURLConnection.setRequestMethod("GET");
             httpURLConnection.setRequestProperty("Accept", "application/xml");
-
+            if (operation == OperationCode.NAVERREVERSEGEOCODE) {
+                httpURLConnection.setRequestProperty("X-Naver-Client-Id", GeoCoderConverter.getCLIENTID());
+                httpURLConnection.setRequestProperty("X-Naver-Client-Secret", GeoCoderConverter.getSECRET());
+            }
             InputStream xml = httpURLConnection.getInputStream();
 
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();

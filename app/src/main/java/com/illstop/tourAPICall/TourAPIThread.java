@@ -35,8 +35,7 @@ public class TourAPIThread extends Thread {
     private static HashMap<String, String> defaultParamMap = null;
     private static HashMap<String, String> searchParamMap = null;
 
-    private double Latitude;
-    private double Longitude;
+    private final static String SERVICEKEY = "mJOEcE4eFDUTJd8nBIasxDwAws4fIdm64UmPnM6qGSJCmLubYafK9MxfKDmp4P0G71WBf8RQC1a09ebXz%2Ffxig%3D%3D";
 
     private boolean run = true;
 
@@ -44,6 +43,10 @@ public class TourAPIThread extends Thread {
 
     public ArrayList<Festival> getNearFestivals() {
         return nearFestivals;
+    }
+
+    public static String getSERVICEKEY() {
+        return SERVICEKEY;
     }
 
     public void run() {
@@ -77,7 +80,7 @@ public class TourAPIThread extends Thread {
         SimpleDateFormat tourAPIDateFormat = new SimpleDateFormat("yyyyMMdd"); // API 데이터 형식이 "yyyyMMdd"이므로 포맷 맞춰서 DATE로 변경
 
         /* 공통 파라미터 설정 */
-        defaultParamMap.put("serviceKey", TourAPIHTTP.getSERVICEKEY());
+        defaultParamMap.put("serviceKey", getSERVICEKEY());
         defaultParamMap.put("MobileOS", "AND");      // AND = ANDROID
         defaultParamMap.put("MobileApp", "Map");     // 서비스 이름 (Application Name)
         defaultParamMap.put("pageNo", String.valueOf(pageNo));
@@ -85,7 +88,7 @@ public class TourAPIThread extends Thread {
         /* searchFestival 파라미터 설정 */
         searchParamMap.putAll(defaultParamMap);
         searchParamMap.put("cat1", "A02");
-        searchParamMap.put("cat2", "A0207");
+        // searchParamMap.put("cat2", "A0207");
 
         /* 지역 코드, 시군구 코드, 축제 검색 날짜 파라미터 설정 */
         LocationDataStore locationDataStore = new LocationDataStore();

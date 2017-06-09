@@ -82,7 +82,15 @@ public class DBManager extends SQLiteOpenHelper {
     }
 
     public String[] getCode(String area, String sigungu) {
-        Log.i("ddd", area + " " + sigungu);
+        Log.i("SEJONG CHECK B AREA", area);
+        Log.i("SEJONG CHECK B SIGUNGU", sigungu);
+
+        if (area.equals("세종특별자치시"))
+            sigungu = area; // 세종특별자치시는 시군구 정보에 읍면리 정보가 들어옴
+
+        Log.i("SEJONG CHECK A AREA", area);
+        Log.i("SEJONG CHECK A SIGUNGU", sigungu);
+
         String GET_CODE_SQL = "SELECT areaCode, sigunguCode FROM " + AREA_CODE_TABLE_NAME + " WHERE "
                 + "areaName = '" + area + "' AND "
                 + "sigunguName = '" + sigungu + "';";

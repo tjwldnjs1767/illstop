@@ -1,26 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     }
 ]
