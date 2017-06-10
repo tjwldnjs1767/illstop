@@ -122,8 +122,6 @@ public class FestivalInfoDialog extends DialogFragment {
         if (tel.contains(",")) {
             telArr = tel.split(", ");
 
-        } else if (tel.contains("~")) {
-            telArr = tel.split("~");
         } else {
             telBtn.setText(tel);
             return;
@@ -199,7 +197,7 @@ public class FestivalInfoDialog extends DialogFragment {
 
     private void setPhoneNumToDial(String phoneNum) {
         try {
-            Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse(phoneNum));
+            Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse(phoneNum.split("~")[0]));
             startActivity(i);
         } catch (Exception e) {
             e.printStackTrace();

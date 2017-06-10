@@ -128,6 +128,7 @@ public class TourAPIThread extends Thread {
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element element = (Element) nodeList.item(i);
 
+                /* 축제 정보에 이미지가 없을 경우 고정 이미지로 대체 */
                 if (element.getElementsByTagName("firstimage").item(0) == null) {
                     Element tempElement = festivalDocument.createElement("firstimage");
                     tempElement.setTextContent("http://www.freeiconspng.com/uploads/no-image-icon-11.PNG");
@@ -146,13 +147,21 @@ public class TourAPIThread extends Thread {
                 }
                 element.appendChild(tempElement);
 
+                /* 축제 전화번호 정보가 두 개 이상일 경우 포함되는 '<br>' 제거 */
+                String beforeTel = element.getElementsByTagName("tel").item(0).getTextContent();
+                String tempTel[] = beforeTel.split("<br>");
+                StringBuilder afterTel = new StringBuilder();
+                for (int telSequence = 0; telSequence < tempTel.length; telSequence++){
+                    afterTel.append(tempTel[telSequence] + " ");
+                }
+
                 Festival festival = new Festival(
                         Integer.parseInt(element.getElementsByTagName("contentid").item(0).getTextContent()),
                         element.getElementsByTagName("addr1").item(0).getTextContent(),
                         element.getElementsByTagName("firstimage").item(0).getTextContent(),
                         Double.parseDouble(element.getElementsByTagName("mapx").item(0).getTextContent()),
                         Double.parseDouble(element.getElementsByTagName("mapy").item(0).getTextContent()),
-                        element.getElementsByTagName("tel").item(0).getTextContent(),
+                        afterTel.toString(),
                         element.getElementsByTagName("title").item(0).getTextContent(),
                         element.getElementsByTagName("eventperiod").item(0).getTextContent()
                 );

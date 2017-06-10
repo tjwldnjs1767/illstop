@@ -10,8 +10,8 @@ f:prebuilt/com/illstop/activity/FestivalInfoDialog$1.dex
 f:prebuilt/com/illstop/activity/MainActivity$1.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog$3$1.dex
 f:prebuilt/com/illstop/activity/LoadingActivity.dex
-f:prebuilt/com/illstop/activity/FestivalInfoDialog$3.dex
 f:prebuilt/com/illstop/activity/MainActivity.dex
+f:prebuilt/com/illstop/activity/FestivalInfoDialog$3.dex
 f:prebuilt/com/illstop/activity/LoadingActivity$1.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog$2.dex
 f:prebuilt/com/illstop/activity/FestivalInfoDialog.dex
@@ -30,8 +30,8 @@ f:prebuilt/com/illstop/R.dex
 f:prebuilt/com/illstop/R$anim.dex
 f:prebuilt/com/illstop/R$drawable.dex
 f:prebuilt/com/illstop/thread/FestivalMarkerThread$1.dex
-f:prebuilt/com/illstop/thread/FestivalMarkerThread$1$1.dex
 f:prebuilt/com/illstop/thread/FestivalMarkerThread.dex
+f:prebuilt/com/illstop/thread/FestivalMarkerThread$1$1.dex
 f:prebuilt/com/illstop/R$color.dex
 f:prebuilt/com/illstop/R$styleable.dex
 f:prebuilt/com/illstop/Utils/IllTextUtils.dex
