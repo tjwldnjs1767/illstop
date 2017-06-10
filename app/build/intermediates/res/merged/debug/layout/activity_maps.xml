@@ -12,18 +12,46 @@
         android:layout_height="match_parent"
         tools:context="com.illstop.MainActivity" />
 
-    <TextView
-        android:textSize="80px"
+    <FrameLayout android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_illInfo"
-
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:singleLine="true"
-        android:scrollHorizontally="true"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit ="marquee_forever">
-    </TextView>
+        android:id="@+id/illLayoutWrapper">
+        <TextView
+            android:id="@+id/wrapper_swipelabel"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/level_notfound">
+        </TextView>
+        <!--스와이프 시에 이 부분의 Visibility만 영향을 받음-->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="#D9F2F2F2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/illLayout">
+            <include
+                android:id="@+id/xml_state1"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state2"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state3"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state4"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state5"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state6"
+                layout="@layout/xml_state_tile"/>
+            <include
+                android:id="@+id/xml_state7"
+                layout="@layout/xml_state_tile"/>
+        </LinearLayout>
+    </FrameLayout>
 
 </RelativeLayout>

@@ -5,9 +5,17 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.IllnessManager.Parse.Response;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
@@ -17,9 +25,11 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.illstop.R;
+import com.illstop.Utils.IllUtils;
 import com.illstop.data.GeoCoderConverter;
 import com.illstop.listener.GoogleApiClientConnectionCallbacks;
 import com.illstop.listener.OnConnectionFailedListener;
+import com.illstop.listener.OnSwipeListener;
 import com.illstop.thread.FestivalMarkerThread;
 import com.illstop.tourAPICall.TourAPIThread;
 
@@ -42,6 +52,14 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleApiClientConnectionCallbacks callbacks;
     private OnConnectionFailedListener connectionFailedListener;
 
+    //--For Ill State
+    private FrameLayout illLayoutWrapper = null;
+    private LinearLayout illLayout = null;
+    private TextView wrapper_swipelabel = null;
+
+    private ArrayList<View> includeArr = null;
+    //For Ill State--
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +71,84 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        //데이터 뷰 초기화
+        includeArr = new ArrayList<>(IllUtils.MAX_STATE_NUM);
+            includeArr.add(findViewById(R.id.xml_state1));
+            includeArr.add(findViewById(R.id.xml_state2));
+            includeArr.add(findViewById(R.id.xml_state3));
+            includeArr.add(findViewById(R.id.xml_state4));
+            includeArr.add(findViewById(R.id.xml_state5));
+            includeArr.add(findViewById(R.id.xml_state6));
+            includeArr.add(findViewById(R.id.xml_state7));
+
+        illLayout = (LinearLayout)findViewById(R.id.illLayout);
+        illLayoutWrapper = (FrameLayout)findViewById(R.id.illLayoutWrapper);
+        wrapper_swipelabel = (TextView)findViewById(R.id.wrapper_swipelabel);
+
+        illLayoutWrapper.setOnTouchListener(new OnSwipeListener(this) {
+            public void onSwipeTop() {
+                if(illLayout.getVisibility() == View.VISIBLE){
+                    TranslateAnimation animate = new TranslateAnimation(0, 0, 0, -illLayout.getHeight());
+                    animate.setDuration(200);
+                    animate.setFillAfter(true);
+                    animate.setAnimationListener(new Animation.AnimationListener() {
+                        public void onAnimationEnd(Animation animation) {
+                            TranslateAnimation animate_swipelabel = new TranslateAnimation(0, 0, -wrapper_swipelabel.getHeight(), 0);
+                            animate_swipelabel.setDuration(500);
+                            animate_swipelabel.setFillAfter(true);
+                            animate_swipelabel.setAnimationListener(new Animation.AnimationListener() {
+                                public void onAnimationEnd(Animation animation) {
+                                    illLayout.setVisibility(View.GONE);
+                                    wrapper_swipelabel.setVisibility(View.VISIBLE);
+                                }
+                                public void onAnimationStart(Animation animation) {}
+                                public void onAnimationRepeat(Animation animation) {}
+                            });
+                            wrapper_swipelabel.startAnimation(animate_swipelabel);
+                        }
+                        public void onAnimationStart(Animation animation) {}
+                        public void onAnimationRepeat(Animation animation) {}
+                    });
+                    illLayout.startAnimation(animate);
+                }
+            }
+            public void onSwipeBottom() {
+                if(illLayout.getVisibility() != View.VISIBLE){
+                    TranslateAnimation animate_swipelabel = new TranslateAnimation(0, 0, 0, -wrapper_swipelabel.getHeight());
+                    animate_swipelabel.setDuration(150);
+                    animate_swipelabel.setFillAfter(true);
+                    animate_swipelabel.setAnimationListener(new Animation.AnimationListener() {
+                        public void onAnimationEnd(Animation animation) {
+                            wrapper_swipelabel.setVisibility(View.GONE);
+
+                            TranslateAnimation animate = new TranslateAnimation(0, 0, -illLayout.getHeight(), 0);
+                            animate.setDuration(500);
+                            animate.setFillAfter(true);
+                            illLayout.startAnimation(animate);
+
+                            illLayout.setVisibility(View.VISIBLE);
+                        }
+                        public void onAnimationStart(Animation animation) {}
+                        public void onAnimationRepeat(Animation animation) {}
+                    });
+
+                    wrapper_swipelabel.startAnimation(animate_swipelabel);
+                }
+            }
+        });
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for(int i = 0; i < IllUtils.MAX_STATE_NUM; ++i){
+                    TextView tv = (TextView)includeArr.get(i).findViewById(R.id.state_text);
+                    tv.setText(IllUtils.getType(i));
+                    Response response = IllUtils.getResponse(IllUtils.getEnumVal(i), "1100000000");
+                    IllUtils.setActive(includeArr.get(i), (response == null || response.getTodayLevel() == -1) ? 5 : response.getTodayLevel());
+                }
+            }
+        }).start();
     }
 
     @Override
