@@ -35,8 +35,7 @@ public class TourAPIThread extends Thread {
     private static HashMap<String, String> defaultParamMap = null;
     private static HashMap<String, String> searchParamMap = null;
 
-    private double Latitude;
-    private double Longitude;
+    private final static String SERVICEKEY = "mJOEcE4eFDUTJd8nBIasxDwAws4fIdm64UmPnM6qGSJCmLubYafK9MxfKDmp4P0G71WBf8RQC1a09ebXz%2Ffxig%3D%3D";
 
     private boolean run = true;
 
@@ -44,6 +43,10 @@ public class TourAPIThread extends Thread {
 
     public ArrayList<Festival> getNearFestivals() {
         return nearFestivals;
+    }
+
+    public static String getSERVICEKEY() {
+        return SERVICEKEY;
     }
 
     public void run() {
@@ -77,7 +80,7 @@ public class TourAPIThread extends Thread {
         SimpleDateFormat tourAPIDateFormat = new SimpleDateFormat("yyyyMMdd"); // API 데이터 형식이 "yyyyMMdd"이므로 포맷 맞춰서 DATE로 변경
 
         /* 공통 파라미터 설정 */
-        defaultParamMap.put("serviceKey", TourAPIHTTP.getSERVICEKEY());
+        defaultParamMap.put("serviceKey", getSERVICEKEY());
         defaultParamMap.put("MobileOS", "AND");      // AND = ANDROID
         defaultParamMap.put("MobileApp", "Map");     // 서비스 이름 (Application Name)
         defaultParamMap.put("pageNo", String.valueOf(pageNo));
@@ -85,19 +88,19 @@ public class TourAPIThread extends Thread {
         /* searchFestival 파라미터 설정 */
         searchParamMap.putAll(defaultParamMap);
         searchParamMap.put("cat1", "A02");
-        searchParamMap.put("cat2", "A0207");
+        // searchParamMap.put("cat2", "A0207");
 
-        // 지역 코드, 시군구 코드 가져오기
-
+        /* 지역 코드, 시군구 코드, 축제 검색 날짜 파라미터 설정 */
         LocationDataStore locationDataStore = new LocationDataStore();
-
         String[] codes = locationDataStore.getDbManager().getCode(locationDataStore.getLocationName(), locationDataStore.getLocality());
 
         Log.d("checkCodes", codes[0] + " " + codes[1]);
         searchParamMap.put("areaCode", codes[0]);
         searchParamMap.put("sigunguCode", codes[1]);
         searchParamMap.put("numOfRows", String.valueOf(numOfRows));
-        searchParamMap.put("eventStartDate", tourAPIDateFormat.format(Calendar.getInstance().getTime())); // 오늘 날짜 설정
+        // 축제 시작 날짜와 종료 날짜를 오늘로 설정하면 진행 중인 축제만 검색 가능
+        searchParamMap.put("eventStartDate", tourAPIDateFormat.format(Calendar.getInstance().getTime()));
+        searchParamMap.put("eventEndDate", tourAPIDateFormat.format(Calendar.getInstance().getTime()));
 
         try { // "yyyyMMdd" 포맷에 맞춰 오늘 날짜 확인
             today = tourAPIDateFormat.parse(tourAPIDateFormat.format(Calendar.getInstance().getTime())); // 오늘 날짜
@@ -125,6 +128,7 @@ public class TourAPIThread extends Thread {
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element element = (Element) nodeList.item(i);
 
+                /* 축제 정보에 이미지가 없을 경우 고정 이미지로 대체 */
                 if (element.getElementsByTagName("firstimage").item(0) == null) {
                     Element tempElement = festivalDocument.createElement("firstimage");
                     tempElement.setTextContent("http://www.freeiconspng.com/uploads/no-image-icon-11.PNG");
@@ -143,13 +147,21 @@ public class TourAPIThread extends Thread {
                 }
                 element.appendChild(tempElement);
 
+                /* 축제 전화번호 정보가 두 개 이상일 경우 포함되는 '<br>' 제거 */
+                String beforeTel = element.getElementsByTagName("tel").item(0).getTextContent();
+                String tempTel[] = beforeTel.split("<br>");
+                StringBuilder afterTel = new StringBuilder();
+                for (int telSequence = 0; telSequence < tempTel.length; telSequence++){
+                    afterTel.append(tempTel[telSequence] + " ");
+                }
+
                 Festival festival = new Festival(
                         Integer.parseInt(element.getElementsByTagName("contentid").item(0).getTextContent()),
                         element.getElementsByTagName("addr1").item(0).getTextContent(),
                         element.getElementsByTagName("firstimage").item(0).getTextContent(),
                         Double.parseDouble(element.getElementsByTagName("mapx").item(0).getTextContent()),
                         Double.parseDouble(element.getElementsByTagName("mapy").item(0).getTextContent()),
-                        element.getElementsByTagName("tel").item(0).getTextContent(),
+                        afterTel.toString(),
                         element.getElementsByTagName("title").item(0).getTextContent(),
                         element.getElementsByTagName("eventperiod").item(0).getTextContent()
                 );

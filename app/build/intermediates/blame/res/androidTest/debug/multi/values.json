@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\qwert\\Desktop\\qqq\\master\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -12,30 +12,6 @@
                 },
                 "from": {
                     "file": "C:\\Users\\qwert\\.android\\build-cache\\83338a89bde5ef953dc22bf6e6ed34a15990f959\\output\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\dsm2015\\Documents\\illstop\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "C:\\Users\\dsm2015\\.android\\build-cache\\123bf09c99fc41ce7bf37da243a99bb778ac0610\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
