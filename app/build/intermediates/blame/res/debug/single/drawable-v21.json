@@ -1,98 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\cd4b075914d454d5191f55ff6f6ae2efea35a159\\output\\res\\drawable-v21\\avd_hide_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\avd_hide_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\design_password_eye.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\cd4b075914d454d5191f55ff6f6ae2efea35a159\\output\\res\\drawable-v21\\avd_show_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\cd4b075914d454d5191f55ff6f6ae2efea35a159\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\cd4b075914d454d5191f55ff6f6ae2efea35a159\\output\\res\\drawable-v21\\design_password_eye.xml"
-    },
-    {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\design_password_eye.xml"
     },
     {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\avd_show_password.xml"
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\drawable-v21\\notification_action_background.xml"
+        "merged": "C:\\Users\\qwert\\Desktop\\aasd\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     }
 ]
