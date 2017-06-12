@@ -8,6 +8,14 @@
         "source": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\qwert\\Desktop\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\qwert\\Desktop\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },

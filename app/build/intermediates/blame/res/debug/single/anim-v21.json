@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\cd4b075914d454d5191f55ff6f6ae2efea35a159\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
@@ -13,6 +17,10 @@
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     }
 ]

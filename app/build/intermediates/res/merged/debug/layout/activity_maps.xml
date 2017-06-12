@@ -1,7 +1,58 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/relativeLayoutFragment"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/illLayoutWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wrapper_swipelabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/level_notfound"></TextView>
+        <!--스와이프 시에 이 부분의 Visibility만 영향을 받음-->
+        <LinearLayout
+            android:id="@+id/illLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F2F2"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/xml_state1"
+                layout="@layout/xml_state_tile" />
+
+            <include
+                android:id="@+id/xml_state2"
+                layout="@layout/xml_state_tile" />
+
+            <include
+                android:id="@+id/xml_state3"
+                layout="@layout/xml_state_tile" />
+
+            <include
+                android:id="@+id/xml_state4"
+                layout="@layout/xml_state_tile" />
+
+            <include
+                android:id="@+id/xml_state5"
+                layout="@layout/xml_state_tile" />
+
+            <include
+                android:id="@+id/xml_state6"
+                layout="@layout/xml_state_tile" />
+
+            <include
+                android:id="@+id/xml_state7"
+                layout="@layout/xml_state_tile" />
+        </LinearLayout>
+    </FrameLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -12,46 +63,5 @@
         android:layout_height="match_parent"
         tools:context="com.illstop.MainActivity" />
 
-    <FrameLayout android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/illLayoutWrapper">
-        <TextView
-            android:id="@+id/wrapper_swipelabel"
-            android:layout_height="20dp"
-            android:layout_width="match_parent"
-            android:background="@drawable/level_notfound">
-        </TextView>
-        <!--스와이프 시에 이 부분의 Visibility만 영향을 받음-->
-        <LinearLayout
-            android:visibility="gone"
-            android:orientation="vertical"
-            android:background="#D9F2F2F2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/illLayout">
-            <include
-                android:id="@+id/xml_state1"
-                layout="@layout/xml_state_tile"/>
-            <include
-                android:id="@+id/xml_state2"
-                layout="@layout/xml_state_tile"/>
-            <include
-                android:id="@+id/xml_state3"
-                layout="@layout/xml_state_tile"/>
-            <include
-                android:id="@+id/xml_state4"
-                layout="@layout/xml_state_tile"/>
-            <include
-                android:id="@+id/xml_state5"
-                layout="@layout/xml_state_tile"/>
-            <include
-                android:id="@+id/xml_state6"
-                layout="@layout/xml_state_tile"/>
-            <include
-                android:id="@+id/xml_state7"
-                layout="@layout/xml_state_tile"/>
-        </LinearLayout>
-    </FrameLayout>
 
-</RelativeLayout>
+</LinearLayout>

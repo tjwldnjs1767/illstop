@@ -8,20 +8,28 @@
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+        "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
@@ -40,6 +48,18 @@
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
@@ -48,11 +68,23 @@
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_switch_track.xml"
     },
     {
@@ -72,24 +104,48 @@
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\35a21f2c39ba9c07cdd55580b6e82b14a8243054\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_default.xml"
     },
     {
+        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\35a21f2c39ba9c07cdd55580b6e82b14a8243054\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\8c0202b5b5d02673cd2d3421299a9a9312c58bcc\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
@@ -104,8 +160,16 @@
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
@@ -122,6 +186,10 @@
     {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\8c0202b5b5d02673cd2d3421299a9a9312c58bcc\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
@@ -152,6 +220,10 @@
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_edittext.xml"
     },
@@ -172,6 +244,10 @@
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\cd4b075914d454d5191f55ff6f6ae2efea35a159\\output\\res\\color\\design_error.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_search_url_text.xml"
     },
@@ -180,12 +256,32 @@
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\8ba1e6ac5e7e24aee563261586c99591a4b13951\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\jwqe764241\\Documents\\GitHub\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\jwqe764241\\.android\\build-cache\\35a21f2c39ba9c07cdd55580b6e82b14a8243054\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\644556c365e15b002898382d654ada2c24883c6a\\output\\res\\color\\design_error.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
@@ -198,5 +294,9 @@
     {
         "merged": "C:\\Users\\qwert\\Desktop\\qqq\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
         "source": "C:\\Users\\qwert\\.android\\build-cache\\dbf361883c593f68f6aa7aeb9f2185136371d146\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\qwert\\Desktop\\illstop\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\qwert\\.android\\build-cache\\8c0202b5b5d02673cd2d3421299a9a9312c58bcc\\output\\res\\color\\common_google_signin_btn_tint.xml"
     }
 ]

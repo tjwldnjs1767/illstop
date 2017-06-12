@@ -3476,8 +3476,8 @@ containing a value of this type.
         public static final int icon_group=0x7f0e00ad;
         public static final int icon_only=0x7f0e004b;
         public static final int ifRoom=0x7f0e0048;
-        public static final int illLayout=0x7f0e0088;
-        public static final int illLayoutWrapper=0x7f0e0086;
+        public static final int illLayout=0x7f0e0087;
+        public static final int illLayoutWrapper=0x7f0e0085;
         public static final int image=0x7f0e0057;
         public static final int info=0x7f0e00a9;
         public static final int info_view=0x7f0e00b3;
@@ -3489,7 +3489,7 @@ containing a value of this type.
         public static final int line3=0x7f0e00b0;
         public static final int listMode=0x7f0e0018;
         public static final int list_item=0x7f0e0059;
-        public static final int map=0x7f0e0085;
+        public static final int map=0x7f0e008f;
         public static final int masked=0x7f0e00c3;
         public static final int media_actions=0x7f0e00a2;
         public static final int middle=0x7f0e0040;
@@ -3585,14 +3585,14 @@ containing a value of this type.
         public static final int withText=0x7f0e004a;
         public static final int wrap=0x7f0e0011;
         public static final int wrap_content=0x7f0e002c;
-        public static final int wrapper_swipelabel=0x7f0e0087;
-        public static final int xml_state1=0x7f0e0089;
-        public static final int xml_state2=0x7f0e008a;
-        public static final int xml_state3=0x7f0e008b;
-        public static final int xml_state4=0x7f0e008c;
-        public static final int xml_state5=0x7f0e008d;
-        public static final int xml_state6=0x7f0e008e;
-        public static final int xml_state7=0x7f0e008f;
+        public static final int wrapper_swipelabel=0x7f0e0086;
+        public static final int xml_state1=0x7f0e0088;
+        public static final int xml_state2=0x7f0e0089;
+        public static final int xml_state3=0x7f0e008a;
+        public static final int xml_state4=0x7f0e008b;
+        public static final int xml_state5=0x7f0e008c;
+        public static final int xml_state6=0x7f0e008d;
+        public static final int xml_state7=0x7f0e008e;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0c0001;
